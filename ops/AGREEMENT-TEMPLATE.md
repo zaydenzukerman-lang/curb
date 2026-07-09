@@ -7,7 +7,12 @@
 
 **SERVICE AGREEMENT**
 
-Between: **Curb** ("Provider") and **______________________** ("Client"), dated ____________.
+Between: **Curb, operated by [DAD'S FULL LEGAL NAME], sole proprietor** ("Provider") and
+**______________________** ("Client"), dated ____________.
+
+> ⚠️ IMPORTANT (from legal research): the Provider party and signature MUST be Dad — contracts
+> signed by a minor are voidable and some clients may refuse them. Zayden is the operator;
+> Dad is the business. Upgrade to an LLC (dad as member) once revenue is steady.
 
 **1. Services.** Provider will deliver the package selected below:
 - [ ] Website — $1,200 one-time (no contract)
@@ -52,4 +57,4 @@ Provider is not liable for platform decisions (Google/Meta suspensions, ranking 
 Agreed:
 
 Client: ____________________  Date: ________
-Provider: __________________  Date: ________
+Provider (Curb — [Dad's name]): __________________  Date: ________
