@@ -15,7 +15,7 @@ Canonical pricing lives on the site: /pricing/. This file = internal reference.
 |---|---|---|---|
 | Starter | $1,080 (reg $1,350) | $450/mo | GBP optimization, weekly GBP posts + photos, review system, basic local SEO, monthly report |
 | Growth | $1,920 (reg $2,400) | $800/mo | + LSA setup/mgmt (where eligible), CallRail call tracking + source reporting, citations (Distribb), call recap |
-| Full Funnel | $3,240 (reg $4,050) | $1,350/mo | + Meta ads (before/after creative, lead forms), campaign landing pages, monthly strategy call |
+| Full Funnel | $2,880 (reg $3,600) | $1,200/mo | + Meta ads (creative, lead forms), past-customer reactivation (SMS/email), seasonal promo campaigns, campaign landing pages, monthly strategy call |
 
 ## Explicitly NOT offered (decided 2026-07-09)
 - **Organic social media management/growth** — cut entirely. Nobody hires a pressure washer from
@@ -23,6 +23,11 @@ Canonical pricing lives on the site: /pricing/. This file = internal reference.
   actually search. Meta ADS (Full Funnel) is different — that's tracked lead generation."
 - Guaranteed rankings — never promised, ever.
 - Backlink packages — not sold standalone.
+
+## Founding Client offer (first 3 clients ONLY)
+40% off the launch in exchange for: honest Google review + testimonial + case-study rights.
+Starter $650 · Growth $1,150 · Full Funnel $1,730. Rate card never changes — the discount has a
+named reason and dies after client #3.
 
 ## Add-ons
 | Add-on | Price |
