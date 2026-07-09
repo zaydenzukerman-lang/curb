@@ -4,7 +4,7 @@ Rule: short messages win. Owners read DMs between jobs. Never send a wall of tex
 
 ## DM #1 — the spec-work opener (send with THEIR live demo link)
 > Hey [name] — was looking at pressure washing companies in your area and your work is clean, but your site/link doesn't do it justice. So I went ahead and built you one: [link]
-> It's yours for $400 flat if you want it — includes online booking + Google Business setup. If not, no stress, was fun to build.
+> It's yours for $500 if you want it — includes online booking + Google Business setup. And if you want the phone ringing too, we do lead gen. If not, no stress, was fun to build.
 
 Why it works: you gave before asking, the price is stated up front (filters tire-kickers), and "no stress" kills the sales pressure.
 
@@ -13,8 +13,8 @@ Why it works: you gave before asking, the price is stated up front (filters tire
 
 The "I'll repurpose it" line adds real scarcity. Never follow up more than once.
 
-## Objection: "Why $400? Fiverr is $50"
-> Fiverr gives you a template. This is already built, already yours, with booking + Google setup so it actually gets you jobs. One full detail pays for it.
+## Objection: "Why $500? Fiverr is $50"
+> Fiverr gives you a template. This is already built, already yours, with booking + Google setup so it actually gets you jobs. Two driveways pays for it.
 
 ## Objection: "I already have an Instagram / Facebook page"
 > That's exactly why you need this — IG gets you seen, the site gets you BOOKED. People ready to pay want prices + a book button, not a scroll through your feed.
@@ -23,7 +23,7 @@ The "I'll repurpose it" line adds real scarcity. Never follow up more than once.
 > Small studio — we only build for pressure washing & exterior cleaning companies. Here's our showcase build: [Apex demo link]. The demo I sent you is live proof of the work.
 
 ## Close + payment
-> Awesome. It's $400 by Zelle to [number]. The second it lands I connect your real info (phone, prices, photos, booking) and you're live within 48h. What's your booking situation now — texts, calls, or an app?
+> Awesome. It's $500 by Zelle to [number]. The second it lands I connect your real info (phone, prices, photos, booking) and you're live within 48h. What's your booking situation now — texts, calls, or an app?
 
 ## Delivery message
 > You're live: [their domain/link]. Google Business is set up — reviews will start feeding it. I added review-request texts you can copy-send after every job. Anything you want tweaked this week is free.

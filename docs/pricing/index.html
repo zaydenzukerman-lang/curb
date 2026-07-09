@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curb — Pricing | Sites & Leads for Pressure Washing Companies</title>
+<meta name="description" content="Curb pricing: websites and lead generation for pressure washing companies. Every lead-gen plan starts with a 3-month launch — prepaid, 20% off.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1A22;
+    --surface:#152530;
+    --surface-2:#1C313D;
+    --foam:#F3F7F6;
+    --spray:#3FC6E8;
+    --spray-dim:#2A8CA3;
+    --rust:#E8703F;
+    --rust-dim:#B8542C;
+    --line: rgba(243,247,246,0.10);
+    --muted: rgba(243,247,246,0.62);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--ink);color:var(--foam);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:0.01em;text-transform:uppercase;line-height:0.95;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+  @media(prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{padding:18px 0;}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;}
+  .topbar .home{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;color:var(--muted);}
+  .topbar .home:hover{color:var(--spray);}
+  .topbar .brand{font-family:'Anton',sans-serif;font-size:18px;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;overflow:hidden;padding:64px 0 56px;}
+  .hero-split{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;z-index:0;}
+  .hero-split .before{background:
+      radial-gradient(120% 100% at 0% 0%, rgba(232,112,63,0.22), transparent 60%),
+      repeating-linear-gradient(115deg, rgba(184,84,44,0.10) 0 2px, transparent 2px 26px),
+      var(--ink);
+    clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
+  }
+  .hero-split .after{background:
+      radial-gradient(120% 100% at 100% 0%, rgba(63,198,232,0.22), transparent 60%),
+      var(--ink);
+  }
+  .hero-inner{position:relative;z-index:1;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:18px;}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--spray);box-shadow:0 0 0 3px rgba(63,198,232,0.18);}
+  .hero h1{font-size:clamp(36px,7vw,64px);margin:0 0 20px;max-width:820px;}
+  .hero h1 span{color:var(--spray);}
+  .hero p.lede{font-size:17px;color:var(--muted);max-width:520px;margin:0 0 28px;line-height:1.55;}
+  .tag-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);}
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section{padding:52px 0;border-top:1px solid var(--line);}
+  .section-head{margin-bottom:34px;max-width:640px;}
+  .section-head .eyebrow{margin-bottom:10px;}
+  .section-head h2{font-size:clamp(26px,4.2vw,38px);margin:0 0 10px;}
+  .section-head p{color:var(--muted);font-size:15.5px;line-height:1.6;margin:0;}
+
+  /* ---------- OFFER CARDS ---------- */
+  .offers{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:820px){.offers{grid-template-columns:repeat(3,1fr);}}
+  .offer{position:relative;border:1px solid var(--line);border-radius:14px;padding:26px 22px 24px;background:var(--surface);display:flex;flex-direction:column;}
+  .offer.featured{border-color:var(--spray-dim);background:linear-gradient(165deg, rgba(63,198,232,0.10), var(--surface) 55%);}
+  .offer .flag{position:absolute;top:-11px;left:22px;background:var(--spray);color:var(--ink);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;font-weight:600;}
+  .offer .badge{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .offer h3{font-size:22px;margin:0 0 6px;}
+  .offer .price{font-family:'IBM Plex Mono',monospace;font-size:30px;font-weight:600;margin:6px 0 2px;color:var(--foam);}
+  .offer .price .unit{font-size:13px;color:var(--muted);font-weight:500;}
+  .offer .commit{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+  .offer ul{list-style:none;margin:0 0 20px;padding:0;flex-grow:1;}
+  .offer li{font-size:14.5px;color:rgba(243,247,246,0.86);padding:8px 0;border-top:1px solid var(--line);display:flex;gap:10px;}
+  .offer li:first-child{border-top:none;}
+  .offer li:before{content:"›";color:var(--spray);font-weight:700;}
+  .offer.rust li:before{color:var(--rust);}
+  .cta{display:inline-block;text-align:center;padding:12px 18px;border-radius:9px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1px solid transparent;}
+  .cta.primary{background:var(--spray);color:var(--ink);}
+  .cta.ghost{background:transparent;border-color:var(--line);color:var(--foam);}
+
+  /* ---------- GAUGE / TIERS ---------- */
+  .gauge-row{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:820px){.gauge-row{grid-template-columns:repeat(3,1fr);}}
+  .gauge-card{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:24px 20px;display:flex;flex-direction:column;}
+  .gauge-card.mid{border-color:var(--spray-dim);}
+  .needle-track{position:relative;height:10px;border-radius:6px;background:var(--surface-2);margin:16px 0 18px;overflow:hidden;}
+  .needle-fill{position:absolute;top:0;left:0;bottom:0;border-radius:6px;background:linear-gradient(90deg, var(--spray-dim), var(--spray));}
+  .gauge-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--spray);margin-bottom:8px;}
+  .gauge-card h3{font-size:19px;margin:0 0 4px;}
+  .gauge-card .price{font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;margin:2px 0 2px;}
+  .gauge-card .price .unit{font-size:12px;color:var(--muted);font-weight:500;}
+  .gauge-card ul{list-style:none;padding:0;margin:0 0 16px;flex-grow:1;}
+  .gauge-card li{font-size:13.5px;color:rgba(243,247,246,0.85);padding:6px 0;display:flex;gap:8px;}
+  .gauge-card li:before{content:"·";color:var(--spray);font-weight:700;}
+  .launch-deal{border:1px solid rgba(63,198,232,0.35);background:rgba(63,198,232,0.07);border-radius:10px;padding:12px 14px;margin:4px 0 14px;}
+  .launch-deal .deal-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--spray);margin-bottom:4px;}
+  .launch-deal .deal-price{font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;}
+  .launch-deal .deal-price s{color:var(--muted);font-size:14px;font-weight:500;margin-left:8px;}
+  .launch-deal .deal-note{font-size:12px;color:var(--muted);margin-top:3px;}
+
+  /* ---------- FINE PRINT / TABLE ---------- */
+  .fine{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media(min-width:720px){.fine{grid-template-columns:1fr 1fr;}}
+  .fine-card{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:var(--surface);}
+  .fine-card h4{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--spray);margin:0 0 8px;}
+  .fine-card p{font-size:14px;color:var(--muted);line-height:1.55;margin:0;}
+
+  footer{padding:36px 0 60px;border-top:1px solid var(--line);}
+  footer p{color:var(--muted);font-size:13px;text-align:center;}
+  footer a{color:var(--spray);}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../">Curb</a>
+    <a class="home" href="../#contact">Get started →</a>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-split"><div class="before"></div><div class="after"></div></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow"><span class="dot"></span> PRICING</div>
+    <h1>Every pressure washer has a <span>before</span> and an <span>after</span>.<br>So does your business.</h1>
+    <p class="lede">A website is the "after" photo. Leads are the pressure that gets you there. Pick the path that fits where you're starting from.</p>
+    <div class="tag-row">
+      <span class="tag">No long-term traps</span>
+      <span class="tag">Ad spend billed direct to you</span>
+      <span class="tag">One industry. Done right.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot"></span> THREE WAYS IN</div>
+      <h2>Choose your starting pressure</h2>
+      <p>Buy the site outright, bundle it with lead gen for a fraction of the cost, or plug lead gen into the site you already have.</p>
+    </div>
+
+    <div class="offers">
+      <div class="offer rust">
+        <div class="badge">Site Only</div>
+        <h3>Just the Website</h3>
+        <div class="price mono">$1,200 <span class="unit">one-time</span></div>
+        <div class="commit">No contract. You own it outright.</div>
+        <ul>
+          <li>Custom-built site, live in 3–5 days</li>
+          <li>Mobile-first, click-to-call, quote form</li>
+          <li>Before/after gallery + service pages</li>
+          <li>You handle your own traffic &amp; SEO</li>
+        </ul>
+        <a href="../#contact" class="cta ghost">Get the site</a>
+      </div>
+
+      <div class="offer featured">
+        <div class="flag">Best value</div>
+        <div class="badge">Site + Lead Gen Bundle</div>
+        <h3>Site, Built to Get Calls</h3>
+        <div class="price mono">$500 <span class="unit">setup</span></div>
+        <div class="commit">+ a 3-month lead gen launch (pick your tier below), then month-to-month</div>
+        <ul>
+          <li>Everything in the site build, above</li>
+          <li>GBP optimization &amp; review system from day one</li>
+          <li>Call tracking wired in before launch</li>
+          <li>Site is built around what ranks, not just what looks good</li>
+        </ul>
+        <a href="../#contact" class="cta primary">Start the bundle</a>
+      </div>
+
+      <div class="offer">
+        <div class="badge">Already Have a Site</div>
+        <h3>Lead Gen Only</h3>
+        <div class="price mono">$250 <span class="unit">setup</span></div>
+        <div class="commit">+ a 3-month lead gen launch (pick your tier below), then month-to-month</div>
+        <ul>
+          <li>Free audit of your current site &amp; GBP first</li>
+          <li>Call tracking installed on your existing number</li>
+          <li>Citation &amp; listings pipeline connected</li>
+          <li>No rebuild required</li>
+        </ul>
+        <a href="../#contact" class="cta ghost">Get audited</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot"></span> MONTHLY LEAD GEN</div>
+      <h2>Set the gauge</h2>
+      <p>Every plan starts with a <strong>3-month launch, paid upfront at 20% off</strong> — that's the runway real results need. After the launch you're month-to-month at the regular rate, cancel anytime. Ad spend for LSAs or Meta is separate and paid directly to Google/Meta — these fees cover strategy and management.</p>
+    </div>
+
+    <div class="gauge-row">
+      <div class="gauge-card">
+        <div class="gauge-label">Low Pressure</div>
+        <div class="needle-track"><div class="needle-fill" style="width:30%"></div></div>
+        <h3>Starter</h3>
+        <div class="price mono">$450 <span class="unit">/mo after launch</span></div>
+        <div class="launch-deal">
+          <div class="deal-label">3-Month Launch · Save 20%</div>
+          <div class="deal-price">$1,080 <s>$1,350</s></div>
+          <div class="deal-note">Paid upfront · saves you $270</div>
+        </div>
+        <ul>
+          <li>Google Business Profile optimization</li>
+          <li>Weekly GBP posts &amp; photo uploads</li>
+          <li>Review-generation system</li>
+          <li>Basic local SEO on your site</li>
+          <li>Monthly report</li>
+        </ul>
+      </div>
+
+      <div class="gauge-card mid">
+        <div class="gauge-label">Medium Pressure</div>
+        <div class="needle-track"><div class="needle-fill" style="width:65%"></div></div>
+        <h3>Growth</h3>
+        <div class="price mono">$800 <span class="unit">/mo after launch</span></div>
+        <div class="launch-deal">
+          <div class="deal-label">3-Month Launch · Save 20%</div>
+          <div class="deal-price">$1,920 <s>$2,400</s></div>
+          <div class="deal-note">Paid upfront · saves you $480</div>
+        </div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Google Local Services Ads setup &amp; management (where eligible)</li>
+          <li>Call tracking &amp; call-source reporting</li>
+          <li>Citation building &amp; listings cleanup</li>
+          <li>Monthly report + call recap</li>
+        </ul>
+      </div>
+
+      <div class="gauge-card">
+        <div class="gauge-label">High Pressure</div>
+        <div class="needle-track"><div class="needle-fill" style="width:100%"></div></div>
+        <h3>Full Funnel</h3>
+        <div class="price mono">$1,350 <span class="unit">/mo after launch</span></div>
+        <div class="launch-deal">
+          <div class="deal-label">3-Month Launch · Save 20%</div>
+          <div class="deal-price">$3,240 <s>$4,050</s></div>
+          <div class="deal-note">Paid upfront · saves you $810</div>
+        </div>
+        <ul>
+          <li>Everything in Growth</li>
+          <li>Meta ads: before/after creative + lead forms</li>
+          <li>Dedicated landing pages per campaign</li>
+          <li>Monthly strategy call</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dot"></span> FINE PRINT</div>
+      <h2>The stuff worth knowing upfront</h2>
+    </div>
+    <div class="fine">
+      <div class="fine-card">
+        <h4>Why a 3-month launch?</h4>
+        <p>Google rankings and review momentum take real time to move — one month is setup, not results. Three months is enough runway to see tracked calls come in. You prepay the launch and get 20% off for it; after that you're month-to-month.</p>
+      </div>
+      <div class="fine-card">
+        <h4>Ad spend</h4>
+        <p>Whatever you put behind Google LSAs or Meta ads is paid directly by you to those platforms. The fees above cover strategy, setup, and management only — never marked up.</p>
+      </div>
+      <div class="fine-card">
+        <h4>After the launch</h4>
+        <p>Month-to-month at the regular rate, cancel any time with 30 days' notice. No re-signing, no surprise renewal terms.</p>
+      </div>
+      <div class="fine-card">
+        <h4>Site ownership</h4>
+        <p>Every site — bundle or standalone — is yours. Domain and hosting are in your name; if you ever leave, you take the site with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Built for pressure washing companies who'd rather be pressure washing than fighting their website. <a href="../">← Back to Curb</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
