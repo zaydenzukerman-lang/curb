@@ -45,11 +45,11 @@ Plain text. No links in Email 1. No attachments ever. Personalize the [bracketed
 >
 > It's yours if you want it — $500 setup when you pair it with our lead gen launch (that's the part that actually makes the phone ring: Google Business optimization, review system, call tracking so you see exactly what it earns you). Or $1,200 for the site on its own.
 >
-> Full pricing: [pricing link]. And heads up — our first 3 clients get the 3-month launch at 40% off in exchange for an honest review. Two ways to do this, happy to walk you through it on a quick call or right here over email.
+> Full pricing: [pricing link]. And heads up — our first 3 clients get the 3-month launch at 40% off in exchange for a testimonial and letting us publish the results. Two ways to do this, happy to walk you through it on a quick call or right here over email.
 
 ## REPLY PLAYBOOK (copy-paste answers)
 **"How much?"** → "Site on its own is $1,200. Smarter move is $500 + our lead gen launch — Growth tier is normally $1,920 for 3 months, founding clients get it at $1,150. After 3 months it's month-to-month, cancel anytime."
-**"Why so cheap / what's the catch?"** → "No catch — we're new to [Town] and we only work with pressure washing companies. First clients get founding pricing in exchange for a review. The site's already built; you saw it."
+**"Why so cheap / what's the catch?"** → "No catch — we're new to [Town] and we only work with pressure washing companies. First clients get founding pricing in exchange for a testimonial. The site's already built; you saw it."
 **"I already got a guy / my nephew does it"** → "All good. Keep the link — if the phone ever gets quiet, that's what we fix."
 **"Does this really work?"** → "We track every call that comes through the site and send you the report monthly. You'll see the number. If it's not working, you cancel — after the launch it's month-to-month."
 **"Who are you?"** → "Small studio, one niche — pressure washing companies. Here's our work: [apex/tidalwave links]. We keep it small on purpose: your calls get answered."
@@ -61,6 +61,10 @@ Plain text. No links in Email 1. No attachments ever. Personalize the [bracketed
 > 1. Invoice — [Stripe payment link] ($500 setup + $1,150 founding Growth launch = $1,650)
 > 2. A quick agreement PDF (protects both of us) — reply "agreed" to accept.
 > The second those clear I send you a short list of what I need (photos, your services, prices) and you're live this week.
+
+## COMPLIANCE FOOTER — goes at the bottom of EVERY cold email (CAN-SPAM, mandatory)
+> Curb · [P.O. Box ___, City, ST ZIP] · Don't want to hear from me? Reply "no" and that's the end of it.
+(Physical mailbox required BEFORE first send — see ops/EMAIL-SETUP.md. Keep a permanent do-not-email list; honor every "no" within 10 days, forever.)
 
 ## RULES
 - Every send logged in leads.md: date, email #, status (sent/replied/pitched/closed/dead)

@@ -25,7 +25,7 @@ Canonical pricing lives on the site: /pricing/. This file = internal reference.
 - Backlink packages — not sold standalone.
 
 ## Founding Client offer (first 3 clients ONLY)
-40% off the launch in exchange for: honest Google review + testimonial + case-study rights.
+40% off the launch in exchange for: testimonial + case-study rights (NEVER trade for Google reviews — Google/FTC prohibit incentivized reviews; ask for those separately, no strings).
 Starter $650 · Growth $1,150 · Full Funnel $1,730. Rate card never changes — the discount has a
 named reason and dies after client #3.
 
