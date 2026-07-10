@@ -13,7 +13,7 @@
 
 | Company | City, ST | Type | Facebook/Google Listing | Email | Status |
 |---------|----------|------|----------------------|-------|--------|
-| Dune Buggy | Grand Rapids, MI | Food Truck | [Facebook](https://www.facebook.com/dunebuggyfoodtruckmi/) | Contact via Facebook Messenger | probable-clean: domain probes negative + StreetFoodFinder profile has zero external links (browser-checked 7/10). FINAL GATE: Zayden checks FB Intro before send |
+| Dune Buggy | Grand Rapids, MI | Food Truck | [Facebook](https://www.facebook.com/dunebuggyfoodtruckmi/) | dunebuggyfoodtruck@gmail.com (found by Zayden 7/10) + FB Messenger | probable-clean: domain probes negative + StreetFoodFinder profile has zero external links (browser-checked 7/10). FINAL GATE: Zayden checks FB Intro before send |
 | Small Town Beauty Studio | Sneedville, TN | Hair Salon | [Facebook](https://www.facebook.com/SmallTownBeautyStudio/) | (423) 300-3853 | **skip — has Square booking site (small-town-beauty-studio.square.site), fails zero-website rule** |
 | Jims HandyMan Service | Akron, OH | Handyman | [Facebook](https://www.facebook.com/handymanjimgriggy/) | (330) 431-2597 | **DEAD — has a website (Zayden found it 7/10)** |
 | Home Town Lawn Care | Medina, NY | Lawn Care | [Facebook](https://www.facebook.com/HomeTownLawnCareORCO/) | (585) 332-6649 | **dead — HAS website (Zayden spotted it on their FB page 7/10; Claude search missed it)** |
