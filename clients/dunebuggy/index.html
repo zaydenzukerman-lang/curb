@@ -5,274 +5,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dune Buggy — Burgers, Fries & Beach Bites | Food Truck & Catering, Grand Rapids MI</title>
-<meta name="description" content="Dune Buggy food truck — smash burgers, loaded fries & beach bites rolling through Grand Rapids and West Michigan. Find the truck or book us for your event.">
+<meta name="description" content="Dune Buggy food truck — smash burgers, loaded fries & beach bites rolling through Grand Rapids and West Michigan. See this month's menu, find the truck, or book your event.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#1B2160;
-    --navy-deep:#131740;
-    --coral:#F26D6B;
-    --coral-deep:#D94E4C;
-    --sand:#FDF6EA;
-    --sun:#F5C048;
-    --ink:#22243A;
-    --ink-soft:#5D6079;
-    --line:#E9E2D2;
-    --radius:18px;
-    --display:'Lilita One',cursive;
-    --body:'Nunito',sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--sand);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-  img{max-width:100%;display:block;}
-  a{color:inherit;text-decoration:none;}
-  .wrap{width:min(1080px,92%);margin-inline:auto;}
-  h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.08;}
-
-  html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);}
-  html.js .reveal.in{opacity:1;transform:none;}
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.reveal{opacity:1!important;transform:none!important;transition:none!important;}}
-
-  /* NAV */
-  .nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s;}
-  .nav.scrolled{background:rgba(253,246,234,.95);backdrop-filter:blur(12px);box-shadow:0 2px 16px rgba(27,33,96,.12);}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0;}
-  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.25rem;color:#fff;transition:color .3s;}
-  .nav.scrolled .brand{color:var(--navy);}
-  .brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.25);}
-  .nav .cta{background:var(--coral);color:#fff;font-family:var(--display);font-size:.95rem;padding:11px 20px;border-radius:999px;box-shadow:0 4px 14px rgba(242,109,107,.45);}
-
-  /* HERO */
-  .hero{position:relative;min-height:94svh;display:flex;align-items:flex-end;isolation:isolate;color:#fff;}
-  .hero-bg{position:absolute;inset:0;z-index:-2;background:url('images/hero-truck.jpg') center 30%/cover no-repeat;}
-  .hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(19,23,64,.5),rgba(19,23,64,.15) 40%,rgba(19,23,64,.82) 90%);}
-  .hero-content{width:min(1080px,92%);margin-inline:auto;padding:120px 0 58px;}
-  .hero h1{font-size:clamp(2.6rem,8vw,4.6rem);max-width:14ch;margin-bottom:14px;text-shadow:0 3px 20px rgba(19,23,64,.5);}
-  .hero h1 em{font-style:normal;color:var(--sun);}
-  .hero p{font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:44ch;margin-bottom:26px;color:rgba(255,255,255,.93);font-weight:600;}
-  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--display);font-size:1rem;padding:15px 28px;border-radius:999px;min-height:48px;transition:transform .25s,box-shadow .25s;}
-  .btn:active{transform:scale(.98);}
-  .btn-coral{background:var(--coral);color:#fff;box-shadow:0 6px 20px rgba(242,109,107,.5);}
-  .btn-coral:hover{transform:translateY(-2px);}
-  .btn-glass{background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.5);color:#fff;backdrop-filter:blur(6px);}
-  .trust-strip{display:flex;flex-wrap:wrap;gap:10px 24px;font-weight:800;font-size:.92rem;color:rgba(255,255,255,.95);}
-  .trust-strip b{color:var(--sun);}
-
-  section{padding:66px 0;}
-  .sec-label{font-family:var(--display);font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:10px;}
-  .sec-title{font-size:clamp(1.9rem,5vw,2.7rem);color:var(--navy);margin-bottom:14px;}
-  .sec-sub{color:var(--ink-soft);max-width:54ch;margin-bottom:34px;font-weight:600;}
-
-  /* MENU */
-  .menu{background:var(--navy);color:#fff;}
-  .menu .sec-title{color:#fff;}
-  .menu .sec-label{color:var(--sun);}
-  .menu .sec-sub{color:rgba(255,255,255,.78);}
-  .menu-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:start;}
-  @media(min-width:900px){.menu-grid{grid-template-columns:.95fr 1.05fr;}}
-  .menu-img{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 44px rgba(0,0,0,.35);}
-  .menu-note{font-size:.88rem;color:rgba(255,255,255,.65);margin-top:10px;font-weight:600;text-align:center;}
-  .hits{display:flex;flex-direction:column;gap:12px;}
-  .hit{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:16px 18px;}
-  .hit .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
-  .hit h3{font-size:1.15rem;color:var(--sun);}
-  .hit .price{font-family:var(--display);font-size:1.1rem;color:#fff;flex:none;}
-  .hit p{font-size:.92rem;color:rgba(255,255,255,.8);font-weight:600;}
-  .hit.special{border-color:var(--coral);background:linear-gradient(160deg,rgba(242,109,107,.16),rgba(255,255,255,.05) 60%);}
-  .hit.special .tag{display:inline-block;background:var(--coral);color:#fff;font-family:var(--display);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:6px;}
-
-  /* FIND US */
-  .find-grid{display:grid;gap:16px;grid-template-columns:1fr;}
-  @media(min-width:820px){.find-grid{grid-template-columns:repeat(3,1fr);}}
-  .find-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;text-align:center;transition:transform .25s,box-shadow .25s;}
-  .find-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(27,33,96,.12);}
-  .find-card .big{font-size:2rem;margin-bottom:8px;}
-  .find-card h3{color:var(--navy);font-size:1.15rem;margin-bottom:6px;}
-  .find-card p{font-size:.92rem;color:var(--ink-soft);font-weight:600;margin-bottom:12px;}
-  .find-card a{font-family:var(--display);color:var(--coral);font-size:.95rem;}
-
-  /* STORY */
-  .story{background:#fff;}
-  .story-grid{display:grid;gap:30px;grid-template-columns:1fr;align-items:center;}
-  @media(min-width:880px){.story-grid{grid-template-columns:1.05fr .95fr;}}
-  .story-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 44px rgba(27,33,96,.18);}
-  .story p{color:var(--ink-soft);font-weight:600;margin-bottom:14px;}
-  .story p b{color:var(--navy);}
-
-  /* CATERING */
-  .cater{background:linear-gradient(170deg,#FBEFD8,var(--sand) 70%);}
-  .cater-box{display:grid;gap:32px;grid-template-columns:1fr;}
-  @media(min-width:880px){.cater-box{grid-template-columns:1fr .95fr;align-items:start;}}
-  .cform{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:0 14px 38px rgba(27,33,96,.12);}
-  .cform label{display:block;font-weight:800;font-size:.84rem;margin:14px 0 6px;color:var(--navy);}
-  .cform input,.cform select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--body);font-size:.95rem;background:var(--sand);color:var(--ink);font-weight:600;}
-  .cform input:focus,.cform select:focus{outline:none;border-color:var(--coral);}
-  .cform button{width:100%;margin-top:20px;border:none;cursor:pointer;}
-  .or-text{text-align:center;margin-top:14px;font-size:.92rem;color:var(--ink-soft);font-weight:700;}
-  .or-text a{color:var(--coral-deep);}
-
-  footer{background:var(--navy-deep);color:rgba(255,255,255,.88);padding:44px 0 36px;}
-  .foot-grid{display:grid;gap:26px;grid-template-columns:1fr;margin-bottom:28px;}
-  @media(min-width:720px){.foot-grid{grid-template-columns:repeat(3,1fr);}}
-  footer h4{font-family:var(--display);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sun);margin-bottom:10px;}
-  footer p,footer a{font-size:.94rem;line-height:1.8;font-weight:600;}
-  .credit{border-top:1px solid rgba(255,255,255,.16);padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.55);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yellowtail&family=Oswald:wght@400;500;600&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav" id="nav">
+<nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top"><img src="images/logo.png" alt="Dune Buggy logo">Dune Buggy</a>
-    <a class="cta" href="#book">Book the Truck</a>
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Dune Buggy logo">Dune Buggy</a>
+    <div class="nav-links">
+      <a href="menu.html">Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="find.html">Find the Truck</a>
+      <a class="nav-cta" href="catering.html">Book the Truck</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="const m=document.getElementById('mm');const o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+<div class="mobile-menu" id="mm">
+  <a href="index.html" class="active">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="story.html">Our Story</a>
+  <a href="find.html">Find the Truck</a>
+  <a href="catering.html">Book the Truck</a>
+</div>
 
-<header class="hero" id="top">
+<header class="hero">
   <div class="hero-bg" role="img" aria-label="Bacon smash burger held up in front of the Dune Buggy food truck"></div>
   <div class="hero-content">
-    <h1 class="reveal">Burgers, fries &amp; <em>beach bites.</em></h1>
-    <p class="reveal">Smash burgers with yacht-chef DNA, rolling through Grand Rapids and all of West Michigan. Find the truck — or bring it to you.</p>
+    <span class="script reveal">burgers, fries &amp; beach bites</span>
+    <h1 class="reveal">Beach food, done seriously.</h1>
+    <p class="reveal">Smash burgers with yacht-chef DNA, rolling through Grand Rapids and all of West Michigan.</p>
     <div class="hero-ctas reveal">
-      <a class="btn btn-coral" href="#menu">See this month's menu</a>
-      <a class="btn btn-glass" href="#find">📍 Find the truck</a>
+      <a class="btn btn-coral" href="menu.html">This Month's Menu</a>
+      <a class="btn btn-glass" href="find.html">Find the Truck</a>
     </div>
     <div class="trust-strip reveal">
-      <span><b>★ 5.0</b> from West Michigan</span>
-      <span>Serving 35 miles around Grand Rapids</span>
-      <span>Food truck &amp; catering</span>
+      <span><b>★ 5.0</b> West Michigan</span>
+      <span>Food Truck &amp; Catering</span>
+      <span>Grand Rapids + 35 miles</span>
     </div>
   </div>
 </header>
 
-<section class="menu" id="menu">
+<section>
   <div class="wrap">
-    <p class="sec-label reveal">This Month's Menu</p>
-    <h2 class="sec-title reveal">New month, new menu. Same smash.</h2>
-    <p class="sec-sub reveal">The lineup changes monthly and this page keeps up — what you see here is what's on the truck right now.</p>
-    <div class="menu-grid">
-      <div class="reveal">
-        <div class="menu-img"><img src="images/menu-current.jpg" alt="Dune Buggy current monthly menu — burgers, fries and beach bites with prices"></div>
-        <p class="menu-note">📱 The full menu, straight from the truck — updated monthly.</p>
-      </div>
-      <div class="hits">
-        <div class="hit reveal">
-          <div class="row"><h3>Dune Burger</h3><span class="price">$11</span></div>
-          <p>Smash steak burger, American cheese, lettuce, tomato, pickles, caramelized onion &amp; Dune sauce.</p>
+    <span class="sec-script reveal">where to next?</span>
+    <h2 class="sec-title reveal">Three ways in.</h2>
+    <div class="teaser-grid">
+      <a class="teaser reveal" href="menu.html">
+        <div class="t-img"><img src="images/menu-current.jpg" alt="This month's Dune Buggy menu" loading="lazy"></div>
+        <div class="t-body">
+          <h3>This Month's Menu</h3>
+          <p>New month, new lineup — smash burgers, loaded fries and the July-only Red, White &amp; Bleu.</p>
+          <span class="t-link">See the menu →</span>
         </div>
-        <div class="hit reveal">
-          <div class="row"><h3>Big Kahuna</h3><span class="price">$16</span></div>
-          <p>Smash steak burger, blended cheeses, grilled pineapple, bacon &amp; Hawaiian BBQ.</p>
+      </a>
+      <a class="teaser reveal" href="story.html">
+        <div class="t-img"><img src="images/burger-rings.jpg" alt="Double smash burger stacked with onion rings" loading="lazy"></div>
+        <div class="t-body">
+          <h3>Our Story</h3>
+          <p>Nine years cooking on Caribbean yachts. Then Grant and Stephanie put that standard on wheels.</p>
+          <span class="t-link">Read the story →</span>
         </div>
-        <div class="hit special reveal">
-          <span class="tag">July only</span>
-          <div class="row"><h3>Red, White &amp; Bleu</h3><span class="price">$19</span></div>
-          <p>Double smash steak burger, bleu cheese, onion rings, bacon &amp; Dune sauce. Gone when July is.</p>
+      </a>
+      <a class="teaser reveal" href="catering.html">
+        <div class="t-img"><img src="images/hero-truck.jpg" alt="The Dune Buggy food truck" loading="lazy"></div>
+        <div class="t-body">
+          <h3>Catering &amp; Events</h3>
+          <p>Weddings, graduations, office lunches — the truck books out months ahead. Lock your date.</p>
+          <span class="t-link">Check your date →</span>
         </div>
-        <div class="hit reveal">
-          <div class="row"><h3>No Big Dill fries</h3><span class="price">$15</span></div>
-          <p>Salt &amp; vinegar fries topped with crispy chicken, pickles, lemon dill aioli &amp; fresh dill.</p>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<section id="find">
+<section class="cta-band">
   <div class="wrap">
-    <p class="sec-label reveal">Find The Truck</p>
-    <h2 class="sec-title reveal">Where are we today?</h2>
-    <p class="sec-sub reveal">The schedule moves fast — these update in real time.</p>
-    <div class="find-grid">
-      <div class="find-card reveal">
-        <div class="big">📅</div>
-        <h3>Live Schedule</h3>
-        <p>Today's location and this week's stops, always current.</p>
-        <a href="https://streetfoodfinder.com/dunebuggyfoodtruckmi" target="_blank" rel="noopener">See the schedule →</a>
-      </div>
-      <div class="find-card reveal">
-        <div class="big">📸</div>
-        <h3>Instagram</h3>
-        <p>Menu drops, specials and where we're parked.</p>
-        <a href="https://www.instagram.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">@dunebuggyfoodtruckmi →</a>
-      </div>
-      <div class="find-card reveal">
-        <div class="big">👍</div>
-        <h3>Facebook</h3>
-        <p>Events, announcements and the community.</p>
-        <a href="https://www.facebook.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">Dune Buggy on FB →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="story">
-  <div class="wrap story-grid">
-    <div class="reveal">
-      <p class="sec-label">The Story</p>
-      <h2 class="sec-title">Nine years cooking on yachts. Now cooking for you.</h2>
-      <p>Before the truck, <b>Grant Francisco</b> spent nearly a decade as a chef on yachts in the Caribbean — where every plate had to be perfect, every time.</p>
-      <p>In 2022, Grant and <b>Stephanie</b> brought that standard home to West Michigan and put it on wheels: proper smash burgers, hand-cut flavors, and beach vibes wherever the truck parks.</p>
-      <p>Now Dune Buggy is one of Grand Rapids' most in-demand trucks — with events booking out months ahead.</p>
-    </div>
-    <div class="story-img reveal"><img src="images/burger-rings.jpg" alt="Double smash burger stacked with onion rings, bacon and melted cheese held up outdoors" loading="lazy"></div>
-  </div>
-</section>
-
-<section class="cater" id="book">
-  <div class="wrap cater-box">
-    <div>
-      <p class="sec-label reveal">Catering &amp; Events</p>
-      <h2 class="sec-title reveal">Bring the beach to your event.</h2>
-      <p class="sec-sub reveal">Weddings, graduations, company lunches, breweries — the truck books out fast, sometimes a year ahead. Lock your date early.</p>
-      <p class="reveal" style="font-weight:800;color:var(--navy)">Prefer to talk? <a href="tel:+15613738080" style="color:var(--coral-deep);text-decoration:underline">Call or text (561) 373-8080</a></p>
-    </div>
-    <form class="cform reveal" onsubmit="event.preventDefault();this.querySelector('button').textContent='✓ Sent — we\'ll get back to you fast';">
-      <label for="c-name">Name</label>
-      <input id="c-name" type="text" placeholder="Your name" required>
-      <label for="c-phone">Phone</label>
-      <input id="c-phone" type="tel" placeholder="(000) 000-0000" required>
-      <label for="c-date">Event date</label>
-      <input id="c-date" type="date">
-      <label for="c-type">Event type</label>
-      <select id="c-type">
-        <option>Wedding</option>
-        <option>Graduation / party</option>
-        <option>Company / office</option>
-        <option>Brewery / venue</option>
-        <option>Something else</option>
-      </select>
-      <button class="btn btn-coral" type="submit">Check my date</button>
-      <p class="or-text">or text your date to <a href="sms:+15613738080">(561) 373-8080</a></p>
-    </form>
+    <span class="script reveal">hungry yet?</span>
+    <h2 class="reveal">Find out where we're parked today.</h2>
+    <a class="btn btn-navy reveal" href="find.html">Find the Truck</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div>
-        <h4>Dune Buggy</h4>
-        <p>Burgers, Fries &amp; Beach Bites<br>Food Truck &amp; Catering · Grand Rapids, MI</p>
-      </div>
-      <div>
-        <h4>Find Us</h4>
-        <p><a href="https://streetfoodfinder.com/dunebuggyfoodtruckmi" target="_blank" rel="noopener">Live schedule</a><br><a href="https://www.instagram.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">Facebook</a></p>
-      </div>
-      <div>
-        <h4>Book</h4>
-        <p><a href="tel:+15613738080">(561) 373-8080</a><br><a href="#book">Check your date</a></p>
-      </div>
+      <div><h4>Dune Buggy</h4><p>Burgers, Fries &amp; Beach Bites<br>Food Truck &amp; Catering<br>Grand Rapids, MI</p></div>
+      <div><h4>Explore</h4><p><a href="menu.html">This Month's Menu</a><br><a href="story.html">Our Story</a><br><a href="catering.html">Catering &amp; Events</a></p></div>
+      <div><h4>Find Us</h4><p><a href="https://streetfoodfinder.com/dunebuggyfoodtruckmi" target="_blank" rel="noopener">Live Schedule</a><br><a href="https://www.instagram.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.facebook.com/dunebuggyfoodtruckmi/" target="_blank" rel="noopener">Facebook</a></p></div>
+      <div><h4>Contact</h4><p><a href="tel:+15613738080">(561) 373-8080</a><br><a href="mailto:dunebuggyfoodtruck@gmail.com">dunebuggyfoodtruck@gmail.com</a></p></div>
     </div>
-    <div class="credit">
-      <span>© Dune Buggy · Grand Rapids, MI</span>
-      <span>Site by Curb</span>
-    </div>
+    <div class="credit"><span>© Dune Buggy · Grand Rapids, MI</span><span>Site by Curb</span></div>
   </div>
 </footer>
 
@@ -283,6 +114,7 @@
   "name": "Dune Buggy",
   "servesCuisine": "Burgers",
   "telephone": "+15613738080",
+  "email": "dunebuggyfoodtruck@gmail.com",
   "priceRange": "$",
   "image": "images/logo.png",
   "address": {"@type":"PostalAddress","addressLocality":"Grand Rapids","addressRegion":"MI","addressCountry":"US"},
@@ -291,9 +123,6 @@
 }
 </script>
 <script>
-  const nav=document.getElementById('nav');
-  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>30);
-  onScroll();addEventListener('scroll',onScroll,{passive:true});
   const targets=document.querySelectorAll('.reveal');
   if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver'in window)){
     targets.forEach(el=>el.classList.add('in'));
