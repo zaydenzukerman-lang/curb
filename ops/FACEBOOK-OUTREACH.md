@@ -58,8 +58,8 @@ Notes:
 > just say the word and I'll leave you be.
 
 **Closing (they said yes to the built site):**
-> Awesome. I'll send a PayPal invoice for the $300 (you can pay with a card, no PayPal account
-> needed) + a quick one-page agreement. The moment that clears, the site's live and it's yours.
+> Awesome. I'll email you an invoice for the $300 (pay by card right from the email) + a quick
+> one-page agreement. The moment that clears, the site's live and it's yours.
 
 All other replies ("why so cheap," "who are you," "can you do marketing too") — use the same
 answers as outreach/cold-email.md's Reply Playbook. Same product, same rules, different app.
@@ -67,3 +67,18 @@ answers as outreach/cold-email.md's Reply Playbook. Same product, same rules, di
 ## Part 5 — Log everything
 Same rule as email: every contact goes in the lead file — date, message #, status
 (sent/replied/pitched/building/closed/dead). If they say "no," they go on the never-again list.
+
+
+## Part 6 — Assisted sending (Claude drives YOUR Chrome) — starts AFTER warmup week
+Decided 2026-07-10 (Zayden's call, guardrails below are the condition):
+- After the account is ~1 week old with real human usage AND Zayden has sent the first messages
+  manually, Claude takes over day-to-day sending — 3-6 messages/day max, each written fresh from
+  that lead's actual page, randomized human-like spacing across the session.
+- HOW: Zayden runs the `curb-chrome` launcher (Chrome with a debug port) on his machine; Claude
+  drives that real, already-logged-in browser via DevTools. NEVER a fresh/automated browser
+  profile, NEVER headless, NEVER from another machine.
+- HARD TRIPWIRES: any captcha, "confirm your identity" checkpoint, warning banner, or unusual
+  logout → automation stops for 72 hours minimum, Zayden browses manually, we reassess. Any
+  restriction repeat = channel goes fully manual for good.
+- Replies stay human-reviewed: Claude drafts, Zayden approves/sends replies during his window
+  (speed matters more on replies than on openers).

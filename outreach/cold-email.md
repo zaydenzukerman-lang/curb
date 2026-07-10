@@ -82,7 +82,7 @@ text email, and make sure SPF/DKIM/warmup (ops/EMAIL-SETUP.md) are done before t
 
 ## CLOSING → payment
 > Awesome. Two things and we're rolling:
-> 1. Invoice — I'll send a PayPal invoice ($300) — you can pay by card, no PayPal account needed
+> 1. Invoice — I'll email you an invoice ($300, via FreshBooks) — pay by card right from the email
 > 2. A quick agreement (protects both of us) — reply "agreed" to accept.
 > The second that clears, the site's live and it's all yours.
 

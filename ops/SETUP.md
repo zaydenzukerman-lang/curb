@@ -3,7 +3,7 @@
 ## PHASE 1 — Before any outreach (do TODAY, ~1 hour total, most need Dad)
 | # | Task | Time | Needs Dad? |
 |---|---|---|---|
-| 1 | **PayPal business account** (dad upgrades his existing or makes one — free). We send invoices from it; clients pay by card, no PayPal account needed. NOTE: new accounts often hold first payments ~21 days — normal, money still arrives. | 10 min | Yes |
+| 1 | **FreshBooks account** (dad's name/card — Zayden's call, overrules the free-PayPal default). Includes card payment processing (Stripe rails) for invoices + the future website checkout. Pick the cheapest plan; it's a monthly cost so make it earn its keep. | 15 min | Yes |
 | 2 | **Buy domain** — curbwebsites.com (Cloudflare or Namecheap, his card/name) | 10 min | Yes |
 | 3 | **Business email** on that domain — hello@curbwebsites.com (registrar email forwarding is free; forward to a Gmail you check) | 10 min | With #2 |
 | 4 | Tell Claude the domain + email → I connect the domain to the site, wire the email into the contact button, set up the quote form (Web3Forms, free) | 0 min | No |
