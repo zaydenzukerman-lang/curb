@@ -1,6 +1,10 @@
 # No-Website Small Business Lead List
 **Date Generated:** 2026-07-10  
-**RULE (7/10): Zayden does the final check on their FB page (Intro → Website field) before every send — ground truth beats search.**
+**VERIFICATION PROTOCOL v2 (7/10, after 4 of 6 leads proved false):**
+1. Cheap agents may only SOURCE candidates — their "verified" claims are worthless (4 fabrications caught).
+2. Claude verifies: domain-pattern probes (curl) + browser-fetch of directory profiles (Yelp/SFF/etc).
+3. Zayden is the FINAL GATE: on their FB page, tap Intro/About → look for a Website field or any
+   link in recent posts. 10 seconds. Nothing sends without this.
 **Verification Method:** WebSearch + WebFetch + URL pattern verification (checked businessname.com, investigated Facebook "Website" field, confirmed no standalone website presence)  
 **Total Verified Leads:** 6  
 **States Covered:** TN, OH, NY, WV, MI (5 states)
@@ -9,12 +13,12 @@
 
 | Company | City, ST | Type | Facebook/Google Listing | Email | Status |
 |---------|----------|------|----------------------|-------|--------|
-| Dune Buggy | Grand Rapids, MI | Food Truck | [Facebook](https://www.facebook.com/dunebuggyfoodtruckmi/) | Contact via Facebook Messenger | new |
+| Dune Buggy | Grand Rapids, MI | Food Truck | [Facebook](https://www.facebook.com/dunebuggyfoodtruckmi/) | Contact via Facebook Messenger | probable-clean: domain probes negative + StreetFoodFinder profile has zero external links (browser-checked 7/10). FINAL GATE: Zayden checks FB Intro before send |
 | Small Town Beauty Studio | Sneedville, TN | Hair Salon | [Facebook](https://www.facebook.com/SmallTownBeautyStudio/) | (423) 300-3853 | **skip — has Square booking site (small-town-beauty-studio.square.site), fails zero-website rule** |
-| Jims HandyMan Service | Akron, OH | Handyman | [Facebook](https://www.facebook.com/handymanjimgriggy/) | (330) 431-2597 | new |
+| Jims HandyMan Service | Akron, OH | Handyman | [Facebook](https://www.facebook.com/handymanjimgriggy/) | (330) 431-2597 | **DEAD — has a website (Zayden found it 7/10)** |
 | Home Town Lawn Care | Medina, NY | Lawn Care | [Facebook](https://www.facebook.com/HomeTownLawnCareORCO/) | (585) 332-6649 | **dead — HAS website (Zayden spotted it on their FB page 7/10; Claude search missed it)** |
-| Small Town Lawn Service | Davin, WV | Lawn Care | [Facebook](https://www.facebook.com/people/Small-Town-Lawn-Service-LLC/61556121660089/) | (681) 254-9057 | new |
-| Local Beauty | Hendersonville, TN | Hair Salon | [Facebook](https://www.facebook.com/localbeautytn) | localbeautytn@gmail.com, (615) 626-9676 | **verified 7/10 — SEND-READY.** Owner: Austyn Mitchell. Nuance: she has a profile page on Phenix Salon Suites' corporate site but no site of her own — pitch should say "no site of your own," not "nothing online." |
+| Small Town Lawn Service | Davin, WV | Lawn Care | [Facebook](https://www.facebook.com/people/Small-Town-Lawn-Service-LLC/61556121660089/) | (681) 254-9057 | probable-clean: domain probes negative; Yelp blocked remote check. FINAL GATE: Zayden checks FB Intro before send |
+| Local Beauty | Hendersonville, TN | Hair Salon | [Facebook](https://www.facebook.com/localbeautytn) | localbeautytn@gmail.com, (615) 626-9676 | **DEAD — has a full real website (localbeautytn.com). Agent's "verified no domain" claim was fabricated; Claude's browser check caught it 7/10.** |
 
 ---
 
