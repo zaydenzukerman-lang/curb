@@ -27,7 +27,11 @@ free tools → packaged as outcomes businesses pay for. Here's the triage and wh
   actually read directory pages to verify "no website" claims before Zayden sends.
 - **Usage boundary (hard rule):** lead RESEARCH/verification only. NEVER for Facebook/Messenger
   automation — the account-safety rules in FACEBOOK-OUTREACH.md stand unchanged.
-- Browser binary fetched via `~/.camoufox-venv/bin/python -m camoufox fetch`.
+- Browser binary fetched. Usage: `~/.camoufox-venv/bin/python`, `from camoufox.sync_api import Camoufox`,
+  pages need `browser.new_page(no_viewport=True)` (protocol quirk with playwright 1.61).
+- **Tested honestly (7/12):** loads pages fine, but Yelp STILL 403s in headless mode (PerimeterX-tier
+  protection). Camoufox helps on softer directories; Yelp verification stays with Zayden's manual
+  check / headful mode if ever truly needed. Not a silver bullet — logged so we don't re-learn this.
 
 ### 3. NotFair (nowork-studio/NotFair, ★3.1k) — NEEDS ZAYDEN (2 commands)
 - **What:** Claude Code plugin: SEO audits, GEO (AI-search optimization), Google Ads + Meta Ads
