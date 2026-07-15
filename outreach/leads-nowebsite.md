@@ -62,7 +62,7 @@ Result: batch mostly BURNED. Charters/party-rentals almost all have websites —
 
 | Company | City, ST | Type | Status |
 |---------|----------|------|--------|
-| Orange Beach Fish Charter Services | Orange Beach, AL | Fishing charter (since 1980) | **BROKEN-SITE lead (Zayden's FB check 7/15):** FB links to orangebeachfish.com → HTTP 503, site dead (Claude confirmed). Not zero-website, but arguably hotter — losing bookings in peak season. Opener angle: "your website link on Facebook is broken." Awaiting Zayden's go/no-go on broken-site targeting. |
+| Orange Beach Fish Charter Services | Orange Beach, AL | Fishing charter (since 1980) | **SITE BUILT 7/15, ready to send.** Broken-site lead: FB links to orangebeachfish.com → 503 dead. No working site anywhere (Claude probed variants + searched 7/15; only Google's stale index of the dead site remains — old site advertised deep sea/inshore, snapper/tuna/amberjack/shark, family charters, sunset cruises). Spec site: clients/orangebeachfish/ → live at zaydenzukerman-lang.github.io/curb/orangebeachfish/. Phone/captain unknown (FB-only) — call CTAs point to their m.me Messenger; Zayden grabs phone from FB Intro → Claude wires it in. No fabricated reviews on site. |
 | Wild Orange Charters | Orange Beach, AL | Fishing charter | **DEAD — wildorangebeachfishing.com** |
 | Great Southern Fishing Charters | Orange Beach, AL | Fishing charter | **DEAD — letsgofishingorangebeach.com** |
 | Intimidator Sportfishing | AL | Fishing charter | **DEAD — intimidatorsportfishing.com (live, 403 to bots)** |

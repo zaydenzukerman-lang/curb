@@ -35,9 +35,14 @@ on the business's FB page (Intro → Website field) before sending. Zayden is th
 8 of 9 had websites (charters/party rentals need booking sites — wrong niche for zero-website
 targeting). Full statuses in outreach/leads-nowebsite.md.
 - **Only survivor: Orange Beach Fish Charter Services** (fb/orangebeachfishcharterservices,
-  since 1980) — probable-clean, awaiting Zayden's FB-Intro final gate.
-- Usable send list is now: Dune Buggy (site done) + Orange Beach Fish Charter Services +
+  since 1980) — Zayden's FB check 7/15 found their FB links to orangebeachfish.com which is
+  DEAD (503). Reclassified as a BROKEN-SITE lead (hotter: losing bookings in peak season).
+  **Spec site BUILT 7/15**: clients/orangebeachfish/ → live at
+  zaydenzukerman-lang.github.io/curb/orangebeachfish/. Opener angle: "your website link is broken."
+  Phone/captain unknown — Zayden grabs from FB Intro, Claude wires in.
+- Usable send list is now: Dune Buggy (site done) + Orange Beach Fish Charter (site done) +
   Small Town Lawn Service (probable-clean from earlier batch).
+- Broken-site targeting implicitly opened 7/15 (Zayden ordered the build) — widens sourcing a lot.
 - Don't source more leads until sending is unblocked — they go stale.
 
 ## PRICING CONFIRMED (2026-07-15): $300 flat stays
