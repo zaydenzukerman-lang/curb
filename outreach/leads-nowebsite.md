@@ -54,3 +54,22 @@ complete how-to (account setup, warmup, scripts, volume limits). Messenger outre
 - **Local Beauty:** No dedicated website (verified no localbeautytn.com domain). Operates inside Phenix Salon Suites but maintains independent Facebook presence.
 
 **Challenge:** Only 6 leads verified with absolute certainty of no website. Many service businesses do maintain some web presence (Wix, Squarespace, booking platforms) or list contact info in Google Business, making true "Facebook-only" leads rarer than initial search suggested. Additional prospecting in Facebook local community groups, Nextdoor, and direct outreach to small-town service directories would yield more leads beyond these six.
+
+---
+
+## In-flight batch verified 2026-07-12 (domain probes + web search, main thread)
+Result: batch mostly BURNED. Charters/party-rentals almost all have websites — confirms the standing warning.
+
+| Company | City, ST | Type | Status |
+|---------|----------|------|--------|
+| Orange Beach Fish Charter Services | Orange Beach, AL | Fishing charter (since 1980) | **PROBABLE-CLEAN — only survivor.** No dedicated site found; FB (fb/orangebeachfishcharterservices) is primary presence. FINAL GATE: Zayden checks FB Intro before send. |
+| Wild Orange Charters | Orange Beach, AL | Fishing charter | **DEAD — wildorangebeachfishing.com** |
+| Great Southern Fishing Charters | Orange Beach, AL | Fishing charter | **DEAD — letsgofishingorangebeach.com** |
+| Intimidator Sportfishing | AL | Fishing charter | **DEAD — intimidatorsportfishing.com (live, 403 to bots)** |
+| Miss Brianna | Gulf Shores, AL | Fishing charter | **DEAD — gulfshoresfishingcharter.com (matches FB handle)** |
+| Charter Boat Destination | Destin, FL | Fishing charter | **DEAD — charterboatdestination.com** |
+| Silver King Charters | PCB/Destin, FL | Fishing charter | **DEAD — silverkingcharters.com** |
+| The Bounce House Co. | Schererville, IN | Party rental | **DEAD — thebouncehouseco.com** |
+| Sittin Pretty Rentals | Collegedale, TN | Photo booth/wedding | **DEAD — sittinprettyrentals.com** |
+
+**Takeaway:** high-ticket booking niches (charters, party rentals, photo booths) are the WRONG place to find zero-website leads — they need booking sites, so they mostly have one. Better sourcing when unblocked: brand-new/just-opened businesses (< 6 mo old), FB local-community-group posts, Nextdoor, trades that book by phone (mobile detailing, handyman, lawn — the earlier verified type). Don't spend more search budget sourcing until sending is actually unblocked (leads go stale).

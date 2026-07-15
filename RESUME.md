@@ -31,16 +31,19 @@ retainers after they're paying customers. Goal: sell 10 websites at $300. Dad ha
 Every lead: Claude probes domain patterns + checks directory/FB, THEN Zayden does final 10-sec check
 on the business's FB page (Intro → Website field) before sending. Zayden is the last gate.
 
-## IN-FLIGHT LEADS (just found, NOT yet verified — verify before any send)
-High-payment-probability candidates from last search, all need domain-probe + FB-Intro check:
-- Fishing charters, Orange Beach/Gulf Shores AL: Miss Brianna (fb/gulfshoresfishingcharter),
-  Wild Orange Charters (fb/WildOrangeBeachFishing), Intimidator Sportfishing, Great Southern
-  Fishing Charters, Orange Beach Fish Charter Services (since 1980)
-- Charters Destin/PCB FL: Charter Boat Destination, Silver King Charters (Capt. Alex Hare)
-- Party rentals: The Bounce House Co. (Schererville IN, fb/TheBounceHouseCo)
-- Photo booth/wedding: Sittin Pretty Rentals (Collegedale TN, fb/sittinprettyrentals)
-NOTE: charters especially tend to HAVE websites (many did in results) — verify hard, expect fallout.
-NEXT ACTION was: probe these domains, then hand Zayden a verified send-sheet.
+## IN-FLIGHT LEADS — VERIFIED 2026-07-12, batch mostly BURNED
+8 of 9 had websites (charters/party rentals need booking sites — wrong niche for zero-website
+targeting). Full statuses in outreach/leads-nowebsite.md.
+- **Only survivor: Orange Beach Fish Charter Services** (fb/orangebeachfishcharterservices,
+  since 1980) — probable-clean, awaiting Zayden's FB-Intro final gate.
+- Usable send list is now: Dune Buggy (site done) + Orange Beach Fish Charter Services +
+  Small Town Lawn Service (probable-clean from earlier batch).
+- Don't source more leads until sending is unblocked — they go stale.
+
+## PRICING CONFIRMED (2026-07-15): $300 flat stays
+Zayden considered lowering, decided to TEST $300 first — still far under standard, maximizes
+revenue. Websites are the ONLY product being sold right now; SEO/marketing/retainer services
+launch later and get pitched to PREVIOUS (happy, paying) clients first.
 
 ## STILL BLOCKED ON ZAYDEN (unchanged for days)
 1. webblaze.io — bought? which registrar? (needed for rebrand + pro URL + email)
