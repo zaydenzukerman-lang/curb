@@ -41,9 +41,18 @@ through ui-ux-pro-max per our standard. Uses dad's placeholder logos (flame word
 W-monogram favicon) — logo winner not yet confirmed by dad, flagged as placeholder.
 - **LIVE NOW**: https://webblaze-two.vercel.app (deployed under dad's `hbz-holdings` Vercel team
   scope, project name `webblaze` — confirmed isolated from his other 25 projects).
-- **webblaze.io domain NOT attached yet** — that's dad/Concierge's step (`vercel domains add
-  webblaze.io` + his Namecheap DNS change: A record @ → 76.76.21.21, CNAME www → cname.vercel-dns.com).
-  Tell Zayden's dad the site is ready to go live whenever he wants to point the domain.
+- **Domains PRE-STAGED on the project 2026-07-15** (everything done on our side): webblaze.io,
+  www.webblaze.io, orangebeachfish.webblaze.io, dunebuggy.webblaze.io all added via
+  `vercel domains add <d> --scope hbz-holdings` (run from linked ~/webblaze, single-arg form).
+  Client demos also now served BY the Vercel project itself: /orangebeachfish/ and /dunebuggy/
+  paths (live on webblaze-two.vercel.app right now) + <slug>.webblaze.io subdomains via
+  src/proxy.ts host routing (Next 16 renamed middleware→proxy; config rewrites handle
+  directory-index + pretty URLs; NOTE: host rules must NOT also live in next.config or the
+  prefix doubles → 404). Portfolio links on homepage are now relative paths.
+  **The ONLY remaining step is Concierge's routine DNS flip** (per WEBBLAZE_BRIEF process:
+  "just tell Forest when ready"): simplest is nameservers → ns1.vercel-dns.com /
+  ns2.vercel-dns.com, which makes root + www + BOTH demo subdomains live in one change.
+  GitHub Pages demo URLs remain as working fallback until then.
 - To redeploy after changes: `cd ~/webblaze && vercel --yes --scope hbz-holdings` (preview) or
   add `--prod` to update production. ALWAYS pass `--scope hbz-holdings` explicitly (no default
   scope in non-interactive mode) and ALWAYS run from inside `~/webblaze`.
