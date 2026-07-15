@@ -30,6 +30,22 @@ the webblaze.io ROOT domain** (the agency's own marketing homepage). Resolution 
   SUPERSEDED by the new Vercel build — kept in the repo as reference/backup only, not the canonical
   marketing site going forward.
 
+## WEBBLAZE.IO MARKETING SITE — BUILT & DEPLOYED 2026-07-15
+Next.js + Tailwind site built in `~/webblaze/` (separate repo from bookedsolid, its own git history).
+Sections: hero ($300 flat pitch), portfolio (real screenshots of Dune Buggy + Orange Beach Fish
+Charter linking to their live GitHub Pages demos), how-it-works (3 steps), pricing card, FAQ,
+contact (mailto:hello@webblaze.io — not live until dad sets up email forwarding). Design ran
+through ui-ux-pro-max per our standard. Uses dad's placeholder logos (flame wordmark header,
+W-monogram favicon) — logo winner not yet confirmed by dad, flagged as placeholder.
+- **LIVE NOW**: https://webblaze-two.vercel.app (deployed under dad's `hbz-holdings` Vercel team
+  scope, project name `webblaze` — confirmed isolated from his other 25 projects).
+- **webblaze.io domain NOT attached yet** — that's dad/Concierge's step (`vercel domains add
+  webblaze.io` + his Namecheap DNS change: A record @ → 76.76.21.21, CNAME www → cname.vercel-dns.com).
+  Tell Zayden's dad the site is ready to go live whenever he wants to point the domain.
+- To redeploy after changes: `cd ~/webblaze && vercel --yes --scope hbz-holdings` (preview) or
+  add `--prod` to update production. ALWAYS pass `--scope hbz-holdings` explicitly (no default
+  scope in non-interactive mode) and ALWAYS run from inside `~/webblaze`.
+
 ## VERCEL SAFETY RULES (from dad's brief — treat as hard law, not a suggestion)
 - Vercel CLI on this machine is authenticated as dad's PERSONAL account (`forest-9003`), account-wide
   — it can see/delete ALL 25 of his projects, not just webblaze. No confirmation prompts.
