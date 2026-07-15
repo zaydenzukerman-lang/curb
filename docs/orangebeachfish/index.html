@@ -77,10 +77,10 @@
 
   /* ---------- hero ---------- */
   .hero{position:relative;min-height:94svh;display:flex;align-items:flex-end;isolation:isolate;color:#fff;}
+  .hero-photo{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;object-position:center 42%;}
   .hero-bg{position:absolute;inset:0;z-index:-2;background:
-      radial-gradient(85% 55% at 82% 8%, rgba(245,158,11,.55), transparent 58%),
-      radial-gradient(120% 95% at 12% 0%, rgba(255,255,255,.12), transparent 52%),
-      linear-gradient(168deg,#0C4A6E 0%,#0E7490 46%,#075985 100%);}
+      radial-gradient(85% 55% at 82% 6%, rgba(245,158,11,.34), transparent 58%),
+      linear-gradient(168deg,rgba(12,74,110,.80) 0%,rgba(7,89,133,.62) 44%,rgba(6,66,100,.92) 100%);}
   .hero-bg::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 96px,rgba(255,255,255,.03) 96px 98px);}
   .hero-waves{position:absolute;left:0;right:0;bottom:-1px;z-index:-1;color:var(--sand);}
   .hero-content{width:min(1120px,92%);margin-inline:auto;padding:128px 0 88px;}
@@ -121,10 +121,24 @@
 
   /* ---------- catch ---------- */
   .catch{background:linear-gradient(170deg,var(--primary-tint),var(--sand) 78%);}
+  .catch-grid{display:grid;gap:34px;grid-template-columns:1fr;align-items:center;}
+  @media(min-width:880px){.catch-grid{grid-template-columns:1.05fr .95fr;}}
+  .catch-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;}
+  .catch-photo img{width:100%;height:100%;object-fit:cover;}
   .fish-chips{display:flex;flex-wrap:wrap;gap:11px;}
   .fish{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:.96rem;display:inline-flex;align-items:center;gap:9px;transition:transform .18s;color:var(--deep);}
   .fish:hover{transform:translateY(-2px);}
   .fish .ico{width:18px;height:18px;color:var(--teal);}
+
+  /* ---------- gallery ---------- */
+  .gallery{background:var(--white);}
+  .gallery-grid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);grid-auto-rows:200px;}
+  @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:230px;}}
+  .g-item{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 20px rgba(15,23,42,.08);margin:0;}
+  .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .g-item:hover img{transform:scale(1.05);}
+  .g-tall{grid-row:span 2;}
+  @media(max-width:759px){.g-tall{grid-row:span 2;}}
 
   /* ---------- about / why ---------- */
   .about-grid{display:grid;gap:36px;grid-template-columns:1fr;align-items:center;}
@@ -184,10 +198,9 @@
       <span>Orange Beach Fish Charter Services<small>Family fishing · Est. 1980</small></span>
     </a>
     <div class="nav-actions">
-      <!-- TODO(Zayden): replace tel:PLACEHOLDER with the real number from their FB Intro; until then this points to Messenger -->
-      <a class="nav-call" href="https://m.me/orangebeachfishcharterservices" target="_blank" rel="noopener">
+      <a class="nav-call" href="tel:+12519792682">
         <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        Call to book
+        (251) 979-2682
       </a>
       <a class="btn btn-primary" href="#book">Book a trip</a>
     </div>
@@ -195,6 +208,7 @@
 </nav>
 
 <header class="hero" id="top">
+  <img class="hero-photo" src="img/hero-boat.jpg" alt="Orange Beach Fish Charter Services boat running offshore on the Gulf" fetchpriority="high">
   <div class="hero-bg"></div>
   <svg class="hero-waves" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 48c180-40 360-40 540-8s360 40 540 8 180-40 360-8v50H0z"/></svg>
   <div class="hero-content">
@@ -260,19 +274,37 @@
 </section>
 
 <section class="catch" id="catch">
+  <div class="wrap catch-grid">
+    <div class="reveal">
+      <p class="sec-label">The Catch</p>
+      <h2 class="sec-title">What's biting out there.</h2>
+      <p class="sec-sub">The Alabama Gulf Coast is one of the best fisheries in America. Depending on the season and your trip, you'll be going after:</p>
+      <div class="fish-chips">
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Red Snapper</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Amberjack</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Tuna</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>King Mackerel</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Triggerfish</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Speckled Trout</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Redfish</span>
+        <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Shark</span>
+      </div>
+    </div>
+    <div class="catch-photo reveal">
+      <img src="img/catch-snapper.jpg" alt="A full box of red snapper caught aboard an Orange Beach Fish Charter Services trip" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
   <div class="wrap">
-    <p class="sec-label reveal">The Catch</p>
-    <h2 class="sec-title reveal">What's biting out there.</h2>
-    <p class="sec-sub reveal">The Alabama Gulf Coast is one of the best fisheries in America. Depending on the season and your trip, you'll be going after:</p>
-    <div class="fish-chips reveal">
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Red Snapper</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Amberjack</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Tuna</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>King Mackerel</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Triggerfish</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Speckled Trout</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Redfish</span>
-      <span class="fish"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12c3-5 9-7 18-5-2 3-2 7 0 10C11 19 5 17 2 12z"/></svg>Shark</span>
+    <p class="sec-label reveal">On The Water</p>
+    <h2 class="sec-title reveal">Real trips, real catches.</h2>
+    <p class="sec-sub reveal">A few days out on the Gulf with our crews and their guests.</p>
+    <div class="gallery-grid reveal">
+      <figure class="g-item g-tall"><img src="img/gallery-customers.jpg" alt="Guests on the docks showing off their catches after Orange Beach charter trips" loading="lazy"></figure>
+      <figure class="g-item"><img src="img/gallery-trophy.jpg" alt="A couple holding a large triggerfish caught offshore" loading="lazy"></figure>
+      <figure class="g-item"><img src="img/gallery-action.jpg" alt="An angler fighting a fish with a bent rod out on the Gulf" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -313,10 +345,13 @@
       <h2>Tell us your dates — we'll handle the rest.</h2>
       <p>Call, message us on Facebook, or send the form and we'll get right back to you with availability and pricing. Summer books up fast, so earlier is better.</p>
       <div class="contact-row">
-        <!-- TODO(Zayden): swap href + text for the real phone number from their FB Intro -->
-        <a class="contact-line" href="https://m.me/orangebeachfishcharterservices" target="_blank" rel="noopener">
+        <a class="contact-line" href="tel:+12519792682">
           <span class="icon"><svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
-          <span><b>Call to book</b><span>Fastest way to lock in a date</span></span>
+          <span><b>(251) 979-2682</b><span>Call to book — fastest way to lock a date</span></span>
+        </a>
+        <a class="contact-line" href="mailto:tom@orangebeachfish.com">
+          <span class="icon"><svg class="ico" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+          <span><b>tom@orangebeachfish.com</b><span>Email us your dates &amp; party size</span></span>
         </a>
         <a class="contact-line" href="https://m.me/orangebeachfishcharterservices" target="_blank" rel="noopener">
           <span class="icon"><svg class="ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1.1-3.3A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg></span>
@@ -361,11 +396,11 @@
         <p><a href="#trips">Inshore fishing</a><br><a href="#trips">Offshore &amp; deep sea</a><br><a href="#trips">Family fun cruises</a></p>
       </div>
       <div>
-        <h4>Book</h4>
-        <p><a href="https://m.me/orangebeachfishcharterservices" target="_blank" rel="noopener">Call to book</a><br><a href="https://www.facebook.com/orangebeachfishcharterservices/" target="_blank" rel="noopener">Facebook page</a><br><a href="#book">Request availability</a></p>
+        <h4>Contact &amp; Book</h4>
+        <p><a href="tel:+12519792682">(251) 979-2682</a><br><a href="mailto:tom@orangebeachfish.com">tom@orangebeachfish.com</a><br>26619 Perdido Beach Blvd<br>Orange Beach, AL 36561<br><a href="https://www.facebook.com/orangebeachfishcharterservices/" target="_blank" rel="noopener">Facebook page</a></p>
       </div>
     </div>
-    <div class="credit">© Orange Beach Fish Charter Services · Orange Beach, AL · Family fun fishing since 1980</div>
+    <div class="credit">© Orange Beach Fish Charter Services · 26619 Perdido Beach Blvd, Orange Beach, AL 36561 · Family fun fishing since 1980</div>
   </div>
 </footer>
 
@@ -380,7 +415,9 @@
     "name": "Orange Beach Fish Charter Services",
     "foundingDate": "1980",
     "priceRange": "$$",
-    "address": {"@type":"PostalAddress","addressLocality":"Orange Beach","addressRegion":"AL","addressCountry":"US"},
+    "telephone": "+1-251-979-2682",
+    "email": "tom@orangebeachfish.com",
+    "address": {"@type":"PostalAddress","streetAddress":"26619 Perdido Beach Blvd","addressLocality":"Orange Beach","addressRegion":"AL","postalCode":"36561","addressCountry":"US"},
     "areaServed": ["Orange Beach","Gulf Shores","Perdido Key"],
     "sameAs": ["https://www.facebook.com/orangebeachfishcharterservices/"]
   }
