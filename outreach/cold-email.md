@@ -1,4 +1,4 @@
-# Curb — Cold Email Playbook
+# Webblaze — Cold Email Playbook
 
 **Current goal (updated 2026-07-10): sell 10 websites at $300 flat.** Any small business, any
 industry. **Target businesses with NO website** (Facebook-page-only, Google-listing-only, or
@@ -10,15 +10,15 @@ site after they reply interested — they review it, request changes, and pay $3
 This is cheaper for us (no wasted builds on cold leads) and matches the offer: "we build it before
 you pay, so you can adjust it to your liking."
 
-**Do NOT link the main Curb site (zaydenzukerman-lang.github.io/curb/ root) in any outreach yet.**
+**Do NOT link the main Webblaze site (zaydenzukerman-lang.github.io/webblaze/ root) in any outreach yet.**
 It still has a placeholder contact email and isn't ready to be seen. Only link the specific
 portfolio pages below.
 
 **Portfolio links to use** (pick 1-2 per email, not all):
-- https://zaydenzukerman-lang.github.io/curb/demo/ — Apex Mobile Detailing (dark/premium style)
-- https://zaydenzukerman-lang.github.io/curb/wash/ — TidalWave Pressure Washing (bright/suburban style)
+- https://zaydenzukerman-lang.github.io/webblaze/demo/ — Apex Mobile Detailing (dark/premium style)
+- https://zaydenzukerman-lang.github.io/webblaze/wash/ — TidalWave Pressure Washing (bright/suburban style)
 
-Send from hello@curbwebsites.com (real mailbox, SPF/DKIM set). 10–15/day week 1, max 30/day after.
+Send from hello@webblaze.io (real mailbox, SPF/DKIM set). 10–15/day week 1, max 30/day after.
 Plain text. No attachments ever. Personalize the [bracketed] parts — never skip.
 
 ---
@@ -36,7 +36,7 @@ Plain text. No attachments ever. Personalize the [bracketed] parts — never ski
 >
 > Want me to put one together for you?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 *Note on links: sending links in a brand-new domain's first email raises spam risk slightly more
 than a fully linkless approach — but the instruction here is to include proof up front, so we
@@ -96,13 +96,13 @@ If they bite: send the /pricing/ page and walk them through Growth tier. If not:
 friendly, they may come back once the site's been up a while.
 
 ## COMPLIANCE FOOTER — goes at the bottom of EVERY cold email (CAN-SPAM, mandatory)
-> Curb · [mailing address — home or P.O. box, dad's pick] · Don't want to hear from me? Reply "no" and that's the end of it.
+> Webblaze · [mailing address — home or P.O. box, dad's pick] · Don't want to hear from me? Reply "no" and that's the end of it.
 (A valid mailing address is required before first send — home address is legally fine. Keep a permanent do-not-email list; honor every "no" within 10 days, forever.)
 
 ## RULES
 - Every send logged in leads.md: date, email #, status (sent/replied/pitched/closed/dead)
 - Reply within 2 hours during your 4-hour window. Speed = trust.
 - Never argue with a no. "All good — good luck out there" and move on.
-- Never link the main Curb site until domain/email/contact are fully live.
+- Never link the main Webblaze site until domain/email/contact are fully live.
 - If they ask something not in the playbook, tell Claude — we add the answer same day.
 - Goal tracker: **__ / 10 websites sold at $300.**

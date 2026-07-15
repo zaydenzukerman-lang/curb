@@ -1,4 +1,4 @@
-# Curb — SEO & Marketing Master Reference
+# Webblaze — SEO & Marketing Master Reference
 Researched 2026-07-10. This is the "why" behind CLIENT-RESULTS-PLAYBOOK.md's "what." Skills loaded:
 seo, seo-audit, growth-engine, paid-ads (available for deeper on-demand work per client).
 

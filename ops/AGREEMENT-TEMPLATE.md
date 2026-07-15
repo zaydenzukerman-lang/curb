@@ -1,4 +1,4 @@
-# Curb — Service Agreement (Template)
+# Webblaze — Service Agreement (Template)
 
 > ⚠️ Template, not legal advice. Have Dad read it before first use. Send as PDF, get a reply
 > "I agree" by email/text at minimum — that plus payment = acceptance.
@@ -7,7 +7,7 @@
 
 **SERVICE AGREEMENT**
 
-Between: **Curb, operated by [DAD'S FULL LEGAL NAME], sole proprietor** ("Provider") and
+Between: **Webblaze, operated by [DAD'S FULL LEGAL NAME], sole proprietor** ("Provider") and
 **______________________** ("Client"), dated ____________.
 
 > ⚠️ IMPORTANT (from legal research): the Provider party and signature MUST be Dad — contracts
@@ -57,4 +57,4 @@ Provider is not liable for platform decisions (Google/Meta suspensions, ranking 
 Agreed:
 
 Client: ____________________  Date: ________
-Provider (Curb — [Dad's name]): __________________  Date: ________
+Provider (Webblaze — [Dad's name]): __________________  Date: ________

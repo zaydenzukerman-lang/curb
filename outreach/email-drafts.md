@@ -1,6 +1,6 @@
 # Ready-to-Send Email 1 Drafts
 
-Copy, paste, send the moment hello@curbwebsites.com exists. Sent in priority order from leads.md.
+Copy, paste, send the moment hello@webblaze.io exists. Sent in priority order from leads.md.
 Each still needs: (1) you skim their site/FB once for 30 sec to make sure nothing changed, (2) the
 demo link once we clone their site from TidalWave, (3) the compliance footer from cold-email.md.
 Until the demo link exists, these can go out AS-IS — they're linkless by design (see playbook).
@@ -21,7 +21,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Want the link? No charge to look.
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -37,7 +37,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a single, clean site this week that would consolidate that. Want the link?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -51,7 +51,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a site this week that makes it obvious which Squeaky Clean they're booking. Want to see it?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -66,7 +66,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a new one this week that puts that front and center. Want the link?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -80,7 +80,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you guys a new site this week — figured it might take one thing off the list. Want to see it?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -94,7 +94,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a new site this week that leads with it. Want the link?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -108,7 +108,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a real one this week. Want to see it?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -122,7 +122,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built a new one this week that does. Want the link?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -136,7 +136,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you one this week that stands out. Want to see it?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 
@@ -150,7 +150,7 @@ Until the demo link exists, these can go out AS-IS — they're linkless by desig
 >
 > Built you a new site this week. Want the link?
 >
-> — Z, Curb
+> — Z, Webblaze
 
 ---
 

@@ -1,4 +1,4 @@
-# Curb — Service Menu (v3 — $300 flat website push)
+# Webblaze — Service Menu (v3 — $300 flat website push)
 
 **Current front offer (2026-07-10): $300 flat website, ANY small business, no niche requirement.**
 Goal: sell 10 of these. Websites are cheap for us; $300 is an easy yes. Marketing/lead-gen tiers

@@ -1,4 +1,4 @@
-# Curb — Outreach Scripts
+# Webblaze — Outreach Scripts
 
 Rule: short messages win. Owners read DMs between jobs. Never send a wall of text.
 

@@ -1,10 +1,10 @@
-# Curb — Legal Checklist (researched 2026-07-09, not legal advice)
+# Webblaze — Legal Checklist (researched 2026-07-09, not legal advice)
 
 ## 1. Business structure — DAD IS THE BUSINESS. Non-negotiable.
 - Contracts signed by a minor are **voidable by the minor** → savvy clients could refuse to sign,
   and our own agreement could be attacked as unenforceable. Fix: **Dad is the contracting party.**
-- Simplest v1: Dad operates as **sole proprietor d/b/a "Curb"** (or just his name on the agreement:
-  "Curb, operated by [Dad's full name]"). Upgrade to an LLC (~$100-300, dad as organizer/member)
+- Simplest v1: Dad operates as **sole proprietor d/b/a "Webblaze"** (or just his name on the agreement:
+  "Webblaze, operated by [Dad's full name]"). Upgrade to an LLC (~$100-300, dad as organizer/member)
   once revenue is real — LLC shields family assets if a client ever sues.
 - Dad's name on: Stripe, bank account, domain registrar, ad accounts, tool subscriptions.
 - Zayden = the operator doing the work; money flows through dad. (Family matter how they split it.)
@@ -13,7 +13,7 @@
 B2B cold email IS legal in the US without prior consent. Required in every commercial email:
 - [ ] **Valid physical postal address** in the footer — a registered P.O. box or UPS-store mailbox
   works (get one; don't use the home address). BLOCKER: set up before first send.
-- [ ] Honest From name ("Z from Curb"), accurate subject lines (ours are), no deceptive headers
+- [ ] Honest From name ("Z from Webblaze"), accurate subject lines (ours are), no deceptive headers
 - [ ] A working opt-out ("reply 'no' and I won't email again" counts) — honor within 10 days, keep
   a do-not-email list forever
 - Templates in outreach/cold-email.md now include the compliant footer.
@@ -43,6 +43,6 @@ B2B cold email IS legal in the US without prior consent. Required in every comme
 ## 6. Who signs what (quick reference)
 | Thing | Signer |
 |---|---|
-| Client service agreement | Dad ("Curb") |
+| Client service agreement | Dad ("Webblaze") |
 | Stripe/bank/registrar/tools | Dad |
-| Emails, delivery, reports | Zayden as "Z, Curb" (operator — fine) |
+| Emails, delivery, reports | Zayden as "Z, Webblaze" (operator — fine) |

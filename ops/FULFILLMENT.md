@@ -1,4 +1,4 @@
-# Curb — Fulfillment Runbooks
+# Webblaze — Fulfillment Runbooks
 
 What we actually DO after they pay. Claude executes the build/content steps; Zayden executes
 anything requiring account logins, phone calls, or client contact.

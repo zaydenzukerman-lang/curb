@@ -1,7 +1,7 @@
 #!/bin/bash
-# curb-chrome — launches YOUR real Chrome (real profile, real logins) with a local
+# webblaze-chrome — launches YOUR real Chrome (real profile, real logins) with a local
 # debug port so Claude can drive it for Facebook assisted-sending.
-# Usage: bash ~/bookedsolid/ops/curb-chrome.sh   (or set up an alias)
+# Usage: bash ~/bookedsolid/ops/webblaze-chrome.sh   (or set up an alias)
 # NOTE: Chrome must be fully closed first — this script handles that check.
 
 if pgrep -x "Google Chrome" > /dev/null; then

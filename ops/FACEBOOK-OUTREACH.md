@@ -1,4 +1,4 @@
-# Curb — Facebook Messenger Outreach Guide (for someone who's never used Facebook)
+# Webblaze — Facebook Messenger Outreach Guide (for someone who's never used Facebook)
 
 Targeting rule (Zayden, 2026-07-10): leads can have ANY online presence (Facebook, Instagram,
 Google listing, Yelp) — they just can't have a **website**. Zero website = valid target.
@@ -9,7 +9,7 @@ Google listing, Yelp) — they just can't have a **website**. Zero website = val
    your birthday. It will text/email a verification code — enter it.
 2. **Make the profile look human before messaging anyone** (this matters — accounts with no photo
    and no activity get flagged as spam bots):
-   - Add a profile photo (a real one of you, or a clean Curb logo — real photo works better)
+   - Add a profile photo (a real one of you, or a clean Webblaze logo — real photo works better)
    - Add a cover photo (anything non-empty)
    - Bio line: "I build websites for small businesses."
    - Add a few friends if you can (family counts), like a handful of pages, scroll the feed a bit
@@ -74,7 +74,7 @@ Decided 2026-07-10 (Zayden's call, guardrails below are the condition):
 - After the account is ~1 week old with real human usage AND Zayden has sent the first messages
   manually, Claude takes over day-to-day sending — 3-6 messages/day max, each written fresh from
   that lead's actual page, randomized human-like spacing across the session.
-- HOW: Zayden runs the `curb-chrome` launcher (Chrome with a debug port) on his machine; Claude
+- HOW: Zayden runs the `webblaze-chrome` launcher (Chrome with a debug port) on his machine; Claude
   drives that real, already-logged-in browser via DevTools. NEVER a fresh/automated browser
   profile, NEVER headless, NEVER from another machine.
 - HARD TRIPWIRES: any captcha, "confirm your identity" checkpoint, warning banner, or unusual

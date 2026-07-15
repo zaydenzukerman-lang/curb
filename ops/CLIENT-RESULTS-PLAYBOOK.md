@@ -1,4 +1,4 @@
-# Curb — Client Results Playbook
+# Webblaze — Client Results Playbook
 ## How we actually make a pressure washer money (the fulfillment bible)
 
 A client's phone rings more because of five levers. Everything we sell maps to one:

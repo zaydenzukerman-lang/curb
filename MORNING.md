@@ -22,7 +22,7 @@
    you send. DCS hook is great: their site is HTTP-only — Chrome literally flags it "Not Secure."
 
 ## Your list today (nothing new, one addition)
-1. Domain (curbwebsites.com) + Zoho mailbox → follow ops/EMAIL-SETUP.md
+1. Domain (webblaze.io) + Zoho mailbox → follow ops/EMAIL-SETUP.md
 2. Stripe (dad)
 3. **P.O. box (dad, new)** — required before the first email legally goes out
 4. Dad reads ops/AGREEMENT-TEMPLATE.md + ops/LEGAL-CHECKLIST.md — 20 minutes, once

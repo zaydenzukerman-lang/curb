@@ -1,4 +1,4 @@
-# Curb — New Client Onboarding Checklist
+# Webblaze — New Client Onboarding Checklist
 
 Send this as a friendly message/form the moment they pay. Nothing starts until the ★ items arrive.
 

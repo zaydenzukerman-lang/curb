@@ -1,10 +1,10 @@
-# Curb — Monthly Client Report Template
+# Webblaze — Monthly Client Report Template
 
 One page. Numbers first. Sent by the 5th. The report is the product — it's why they stay.
 
 ---
 
-**[Company] — [Month] Growth Report** · from Curb
+**[Company] — [Month] Growth Report** · from Webblaze
 
 ## The number that matters
 > **[X] calls** came through your tracked number this month ([Y] from Google search, [Z] from LSA,

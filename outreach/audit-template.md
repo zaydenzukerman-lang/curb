@@ -1,4 +1,4 @@
-# Curb — Free Audit Template (the lead-gen opener)
+# Webblaze — Free Audit Template (the lead-gen opener)
 
 Purpose: for Lead-Gen-Only prospects (they have a site) or as ammo in any pitch. Fill this in
 ~15 min using only public info, send as a short PDF/email. It sells by showing them what they're
@@ -6,7 +6,7 @@ losing, in their own numbers. Claude fills sections 1–5 from research; Zayden 
 
 ---
 
-**[COMPANY] — Local Visibility Audit** · [Date] · Prepared by Curb
+**[COMPANY] — Local Visibility Audit** · [Date] · Prepared by Webblaze
 
 ## 1. The headline number
 > "[Town] gets an estimated [X] searches/month for pressure washing services. Right now, [Company]
