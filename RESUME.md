@@ -184,6 +184,46 @@ No creation, no warmup week needed — outreach can start IMMEDIATELY. (I wrongl
 Volume rules still apply: it's aged but has zero outreach history → start ~5 new businesses/day,
 no links in message 1.
 
+## SUN FINANCE — WARM LEAD (Forest's past client, 2026-07-20) — best lead we have
+Forest still has contact with Sun Finance Co. LLC (Metairie LA, lender since 1958) and can
+introduce us — they WANT a new website. NOT a $300 job: real financial-services work, price TBD
+with Forest. Scope (Zayden): ONE unified multi-page site covering their 3 arms (Sun Mortgage
+Funding $5k-$10M, Sun Premium Financing, Sun Finance personal loans $500-$3k). Old sites:
+sunmortgagefunding.com + sunfinance.com (dated).
+- **DEMO BUILT + LIVE: https://sunfinance.webblaze.io** (also /sunfinance/ path). Static site in
+  webblaze/public/sunfinance/, navy+gold "Trust & Authority" via ui-ux-pro-max, real content,
+  PREVIEW ribbon. Registered in DEMOS arrays (proxy.ts + next.config.ts) + vercel domain added.
+- **COMPLIANCE RULE (from Concierge, critical):** lending is regulated — demo uses PLACEHOLDERS
+  for NMLS# and legal disclosures. Do NOT publish real NMLS/disclosure text until Forest provides
+  them AND it clears a compliance review (fleet rule for agent-written regulated content).
+- DONE: real "SUN" logo (pulled from their site) in nav, verified NMLS #71517 (Sun Mortgage
+  Funding) + Equal Housing Lender + LA OFI license slot in compliance footer. PITCH ANGLE: their
+  current 3 sites show ZERO NMLS/equal-housing/disclosures — our redesign adding a proper
+  compliance footer is a real selling point. Their old sites built by Inspree (Zayden's family
+  agency) years ago — we're upgrading family work.
+- BEFORE PUBLISH (not for the preview): human must verify NMLS 71517 at nmlsconsumeraccess.org
+  (bot-blocked); client fills LA OFI license #s + final disclosure text.
+- Budget: Zayden's call (Forest hands-off, "this is all Zayden's project"). Above $300 tier.
+- Intro: Forest makes it whenever the demo's ready — nothing to wait on. Home page is ready NOW.
+- NEXT (my job, NOT Concierge's): build inner pages (Loan Programs, About, Apply, Contact) if we
+  want depth before the intro; decide price.
+
+## CONCIERGE SCOPE (Zayden, 2026-07-20) — STRUCTURAL/ACCOUNT things ONLY, rarely
+Concierge is NOT a work collaborator. Don't route research/building/content/logos through him
+(I over-did this on Sun Finance — he pulled NMLS/logos that were MY job). Default to ZERO messages.
+Only message when I hit a true wall that is BOTH account-level (needs Forest's logins) AND not
+something Zayden can click himself — e.g. registrar/nameserver changes, Cloudflare-type access.
+Escalation: do it myself → ask Zayden → (only if truly account-gated) Concierge. See
+feedback_concierge_scope.md.
+
+## CONCIERGE CHANNEL — LIVE + WORKING (2026-07-20)
+SSH mail-slot to Forest's Mac mini works both ways (confirmed real round-trips). Send:
+`bash ~/message-concierge.sh "msg"` or `cat file | bash ~/message-concierge.sh` (stdin, best for
+long/multi-line; 20KB cap). Read replies: `bash ~/message-concierge.sh --check`. Key is locked to
+mail-slot-only on their side. Concierge gets pinged instantly; replies land in the mailbox (poll
+with --check, or a background until-loop watcher). CLOUDFLARE settled via this channel: none exists,
+stay on Vercel+ImprovMX. Registrar-level (Namecheap) nameserver changes = request via mailbox.
+
 ## PAYMENTS — effectively solved (2026-07-20)
 Zayden already has a FreshBooks account. Payout/processing rail = **dad's (Forest's) Stripe
 account**, which Zayden will connect inside FreshBooks. This clears the age/KYC problem cleanly:
