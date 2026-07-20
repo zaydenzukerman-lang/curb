@@ -36,13 +36,31 @@ the webblaze.io ROOT domain** (the agency's own marketing homepage). Resolution 
   SUPERSEDED by the new Vercel build — kept in the repo as reference/backup only, not the canonical
   marketing site going forward.
 
+## hello@webblaze.io EMAIL — 2026-07-20, DNS side DONE, one free signup left
+FACT CHECK (corrected a wrong assumption): Namecheap is registrar ONLY. DNS is on Vercel
+nameservers (ns1/ns2.vercel-dns.com) — confirmed via Google DNS, Cloudflare DNS, and WHOIS
+independently. No Cloudflare account/API access exists on this machine. Since DNS lives on
+Vercel and I have working `vercel dns` CLI access, I can add/remove ANY DNS record myself,
+instantly, with zero Namecheap or Cloudflare involvement.
+- Dropped Google Workspace (no gmail/paid-Google — Zayden's call 7/20). Removed its SPF record.
+- Set up **ImprovMX** instead (free custom-domain email forwarding, works with any DNS host):
+  added MX (mx1.improvmx.com prio 10, mx2.improvmx.com prio 20) + SPF TXT
+  (`v=spf1 include:spf.improvmx.com ~all`) via `vercel dns add webblaze.io ...` — confirmed live
+  via `dig @8.8.8.8`.
+- **ONLY remaining step (free, ~2 min, no login needed beyond signing up)**: register at
+  improvmx.com (email + password only), add webblaze.io, set forwarding rule
+  `hello@webblaze.io → webblazeio@gmail.com`. Then update the site's contact button from
+  webblazeio@gmail.com to hello@webblaze.io (one line in src/app/page.tsx, redeploy).
+- Reusable pattern going forward: ANY DNS record webblaze.io ever needs (more subdomains, more
+  email providers, verification codes, etc.) — Claude adds it directly via `vercel dns add
+  webblaze.io <name> <type> <value>` from `~/webblaze`, no dad/Namecheap/Cloudflare step needed.
+
 ## WEBBLAZE.IO MARKETING SITE — BUILT & DEPLOYED 2026-07-15
 Next.js + Tailwind site built in `~/webblaze/` (separate repo from bookedsolid, its own git history).
 Sections: hero ($300 flat pitch), portfolio (real screenshots of Dune Buggy + Orange Beach Fish
 Charter linking to their live GitHub Pages demos), how-it-works (3 steps), pricing card, FAQ,
 contact (mailto:webblazeio@gmail.com — a fresh Gmail Zayden made 7/15, works immediately, no
-domain/DNS needed; hello@webblaze.io dropped since it required dad's Namecheap access with no
-"another way" that avoids DNS entirely — domain email can wait). Design ran
+domain/DNS needed). Design ran
 through ui-ux-pro-max per our standard. Uses dad's placeholder logos (flame wordmark header,
 W-monogram favicon) — logo winner not yet confirmed by dad, flagged as placeholder.
 - **LIVE NOW**: https://webblaze-two.vercel.app (deployed under dad's `hbz-holdings` Vercel team
