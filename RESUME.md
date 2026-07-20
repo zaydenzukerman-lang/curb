@@ -219,15 +219,25 @@ driver: free Cloudflare Email Routing for zayden@webblaze.io. Cloudflare Free ti
   ~/.claude/plugins/marketplaces/cloudflare/.mcp.json.
 - AUTH IS VIA OAUTH, not a raw token — cleaner, no credential handling. cloudflare-api MCP
   authenticates to whatever account Zayden logs into.
-- PENDING (needs Zayden's interactive session — I can't OAuth from non-interactive):
-  1) Zayden makes his OWN free Cloudflare account + adds webblaze.io (his account = his control,
-     per the token blast-radius reasoning; Concierge will delete the zone it made in Forest's acct).
-  2) Restart Claude Code so the CF MCP servers load; run /mcp → authenticate cloudflare-api via OAuth.
-  3) THEN (next session) Claude stages full zone via MCP: webblaze.io + www + 3 demo subdomains →
-     Vercel, DNS-ONLY (grey cloud); Email Routing zayden@webblaze.io → Zayden's Gmail; verify green.
-  4) Hand Concierge the 2 Cloudflare nameservers → Concierge flips Namecheap NS (records-first,
-     flip-last, zero downtime). Concierge already made a zone in Forest's acct (NS jimmy+melody) —
-     that gets deleted in favor of Zayden's own account.
+- MCP OAUTH DIDN'T WORK (non-interactive session can't run it). PIVOTED to scoped API token —
+  Zayden made his OWN Cloudflare account (zone webblaze.io id=38f5574d3d2e456ed8f24ba23682d395,
+  acct id=3fa8904a495aaa83a031d9c38ba6e865, status pending, NS = lee + leah.ns.cloudflare.com).
+  Token stored at ~/.cf_webblaze_token (chmod 600, NOT in any git repo). Scope: Zone DNS Edit
+  (Email Routing perm did NOT stick — got auth error on that endpoint).
+- DONE 2026-07-20 via token+curl: cleaned the zone. Verified (via curl --resolve, before touching
+  anything) that apex→76.76.21.21 and subdomains→cname.vercel-dns.com both serve the live site
+  w/ valid HTTPS. Then deleted 7 broken/proxied Vercel records + ImprovMX MX/SPF; added clean
+  DNS-ONLY records: A webblaze.io→76.76.21.21, CNAME www/orangebeachfish/dunebuggy/sunfinance→
+  cname.vercel-dns.com. Zone is FLIP-SAFE (site won't break on NS cutover). 3 CAA records kept.
+- REMAINING (needs Zayden, both quick):
+  1) EMAIL ROUTING (dashboard wizard, my token lacks the account-level perm): Cloudflare dash →
+     webblaze.io → Email → Email Routing → enable; add destination Gmail + verify (click link in
+     that inbox); create address zayden@webblaze.io → forward to that Gmail. Wizard auto-adds the
+     Cloudflare MX/SPF. Can be done while zone is still pending.
+  2) NS FLIP: tell Concierge to change Namecheap nameservers to lee.ns.cloudflare.com +
+     leah.ns.cloudflare.com. (Concierge deletes its jimmy/melody zone in Forest's acct.)
+     Site is already flip-safe, so flip can happen anytime; doing email first = zero email gap.
+- To manage the zone again: TOKEN=$(cat ~/.cf_webblaze_token); curl .../client/v4/zones/$ZONE/...
 - Note: to SEND as zayden@webblaze.io later, set up Gmail "Send mail as" (separate free step).
 - Bonus (Concierge): client's REAL domains (sunfinance.com etc.) already in Inspree's Cloudflare →
   Sun Finance production cutover is in-family/trivial once we win the work.
