@@ -103,6 +103,12 @@ Big design elevation of webblaze.io + Sun Finance, plus legal pages. All LIVE + 
   scroll). Real users see smooth reveals.
 - Client demos NOT redesigned (Dune Buggy/Orange Beach) — task was webblaze + Sun Finance only.
 - Contact form still posts to Web3Forms with placeholder key (unchanged pending item).
+- ANCHOR-SCROLL GOTCHA (fixed 2026-07-20): `overflow-x:hidden` + scroll-reveal transforms break
+  native in-page hash scrolling (clicking #anchor jumps to wrong spot near top). Fix applied to
+  BOTH sites: JS click handler intercepts a[href*="#"] and does manual
+  `window.scrollTo({top: el.rect.top+scrollY-offset})`. Sun Finance: inline script + section[id]/
+  .arm scroll-margin. Homepage: handler in Nav useEffect (site.tsx), handles "#x" and "/#x".
+  If adding new anchor links or a new static site with reveals, replicate this.
 
 ## WEBBLAZE.IO MARKETING SITE — BUILT & DEPLOYED 2026-07-15 [superseded by 07-20 redesign above]
 Next.js + Tailwind site built in `~/webblaze/` (separate repo from bookedsolid, its own git history).
