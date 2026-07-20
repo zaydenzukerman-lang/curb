@@ -212,10 +212,13 @@ sunmortgagefunding.com + sunfinance.com (dated).
 webblaze.io is now fully on Cloudflare (Zayden's own account, NS lee+leah.ns.cloudflare.com, zone
 ACTIVE). All 4 sites (webblaze.io + orangebeachfish/dunebuggy/sunfinance subdomains) verified 200
 on the new DNS. DNS records: A webblaze.io→76.76.21.21 + CNAMEs www/3-demos→cname.vercel-dns.com,
-all DNS-only; 3 CAA kept. Token at ~/.cf_webblaze_token (Zone DNS Edit only — NOT authorized for
-activation_check or email routing endpoints). REMAINING: Email Routing for zayden@webblaze.io is
-Zayden's dashboard job (Email→Email Routing→enable, add+verify destination Gmail [which one TBD],
-create zayden@webblaze.io rule). Then Gmail "Send mail as" to reply as the address.
+all DNS-only; 3 CAA kept. Token at ~/.cf_webblaze_token (Zone DNS Edit only).
+EMAIL DONE 2026-07-20: went with **Google Workspace** (Zayden's own new Workspace acct, ~$6/mo
+dad's card), NOT Cloudflare Email Routing. zayden@webblaze.io is a real Google mailbox. DNS in
+Cloudflare: MX→smtp.google.com, google-site-verification TXT, 2x DKIM (all added by Zayden/Google
+wizard), + SPF (v=spf1 include:_spf.google.com ~all) added by Claude via token. Fully wired,
+send+receive. Phone notis = add account to Gmail app. Works like his zayden@inspree.com (inspree
+also on Google Workspace — that's how we confirmed the approach).
 
 ## CLOUDFLARE — moving webblaze.io here (Zayden's call, 2026-07-20) [historical, now done]
 Decision: webblaze.io DNS + email moves Vercel → Cloudflare (Zayden standardizing on CF). Immediate
