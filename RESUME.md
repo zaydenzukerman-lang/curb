@@ -247,6 +247,16 @@ already in Inspree's Cloudflare (easy production cutover).
   GOTCHA: new subdomains need BOTH (a) add to DEMOS arrays in proxy.ts + next.config.ts, (b) vercel
   domains add, AND (c) a Cloudflare CNAME record (<sub> → cname.vercel-dns.com, DNS-only) via the
   token — I forgot (c) first and they 404'd until added. Certs auto-issue after DNS resolves.
+- REVISED 2026-07-21 per Zayden: (1) checked the REAL sites' branding (clean/light, SUN yellow-gold
+  + orange dots, minimal) — see research block above. (2) HYBRID restyle: flipped the hero to LIGHT
+  (ivory/gold, navy headline) on all 3; navy kept only for heritage section + footer as accents.
+  Kept Fraunces/navy-gold polish. (3) CROSS-LINK FIX (Zayden: "footers don't work / why link to the
+  page I'm on"): footer "The Sun Family" column + arms-card CTAs now link to the OTHER 2 real
+  subdomains; current business shown in gold (.cur), not a self-link. Mirrors how their real sites
+  cross-link the 3 businesses in the header. Anchor-scroll JS handler was already present in all 3.
+  All 3 files share identical CSS, so style changes are applied via literal-replace script across
+  all 3 at once. Found brand-identity skills (rampstackco/claude-skills) but used direct brand-match
+  + ui-ux-pro-max/modern-web-design instead.
 - **DEMO BUILT + LIVE: https://sunfinance.webblaze.io** (also /sunfinance/ path). Static site in
   webblaze/public/sunfinance/, navy+gold "Trust & Authority" via ui-ux-pro-max, real content,
   PREVIEW ribbon. Registered in DEMOS arrays (proxy.ts + next.config.ts) + vercel domain added.
